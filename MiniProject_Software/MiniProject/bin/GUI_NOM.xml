@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<NOM:Nex1ObjectModel xmlns:NOM="lignex1.sw.nframework.NOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="lignex1.sw.nframework.NOM NOM.xsd" version="1.0" name="" date="2012-07-17" author="">
+    <NOM:objects>
+        <NOM:object name="TestMessage" id="69905" nameNotes="test 객체" sharing="PublishSubscribe" orderType="Receive" alignment="false" period="2">
+            <NOM:attribute name="fieldUint" dataType="uintBE" />
+            <NOM:attribute name="fieldUint3" dataType="uint3" />
+            <NOM:attribute name="fieldInt3" dataType="int3" />
+            <NOM:attribute name="fieldUint3BE" dataType="uint3BE" />
+            <NOM:attribute name="fieldInt3BE" dataType="int3BE" />
+            <NOM:attribute name="fieldByte" dataType="byte" />
+            <NOM:attribute name="enumTest" dataType="DeadReckoningAlgorithmEnum8" />
+            <NOM:attribute name="stringTest" dataType="string" />
+            <NOM:attribute name="fixedTest" fixedLength="24" dataType="fwstring" />
+            <NOM:attribute name="fixedDatum" fixedLength="20" dataType="fdatum" />
+            <NOM:attribute name="fieldint" dataType="intBE" />
+            <NOM:attribute name="pos" dataType="Position" indicatorLength="4" />
+            <NOM:attribute name="fieldUshort" dataType="ushortBE" />
+            <NOM:attribute name="varDatum" dataType="var" />
+        </NOM:object>
+		 <NOM:object name="TestMessage2" id="69907" nameNotes="test 객체" sharing="PublishSubscribe" orderType="Receive" alignment="false">
+            <NOM:attribute name="fieldUint" dataType="uintBE" />
+            <NOM:attribute name="fieldUint3" dataType="uint3" />
+            <NOM:attribute name="fieldInt3" dataType="int3" />
+            <NOM:attribute name="fieldUint3BE" dataType="uint3BE" />
+            <NOM:attribute name="fieldInt3BE" dataType="int3BE" />
+            <NOM:attribute name="fieldByte" dataType="byte" />
+            <NOM:attribute name="enumTest" dataType="DeadReckoningAlgorithmEnum8" />
+            <NOM:attribute name="stringTest" dataType="string" />
+            <NOM:attribute name="fixedTest" fixedLength="24" dataType="fwstring" />
+            <NOM:attribute name="fixedDatum" fixedLength="20" dataType="fdatum" />
+            <NOM:attribute name="fieldint" dataType="intBE" />
+            <NOM:attribute name="pos" dataType="Position" indicatorLength="4" />
+            <NOM:attribute name="fieldUshort" dataType="ushortBE" />
+            <NOM:attribute name="varDatum" dataType="var" />
+        </NOM:object>
+      <NOM:object name="ICD_Test1" id="111" nameNotes="ICD의 Test1 메시지" sharing="PublishSubscribe" orderType="Receive" alignment="false">
+        <NOM:attribute name="SystemTime1" nameNotes="Logging Time - sec"  dataType="uintBE"/>
+        <NOM:attribute name="SystemTime2" nameNotes="Logging Time - millisec"  dataType="uintBE"/>
+        <NOM:attribute name="Message1" nameNotes="수신 메시지 1" dataType="uintBE"/>
+        <NOM:attribute name="Message2" nameNotes="수신 메시지 2" dataType="uintBE"/>
+      </NOM:object>
+		<!--
+        <NOM:object name="Port.camodel.in_GUI_211" id="211" sharing="Subscribe" orderType="Receive" alignment="false">
+
+            <NOM:attribute name="MsgID" dataType="uintBE" />
+            <NOM:attribute name="MsgLen" dataType="uintBE" />
+            <NOM:attribute name="MilitaryCode" size="10" dataType="byte" />
+            <NOM:attribute name="OperationPassword" size="8" dataType="byte" />
+        </NOM:object>
+		-->
+		<NOM:object name="Port.camodel.in_GUI_211" id="211" sharing="Subscribe" orderType="Receive" alignment="false">
+            <NOM:attribute name="MsgID" dataType="uintBE" />
+            <NOM:attribute name="MsgLen" dataType="uintBE" />
+            <NOM:attribute name="MilitaryCode" dataType="byte" />
+            <NOM:attribute name="OperationPassword" dataType="ushortBE" />
+        </NOM:object>
+		<NOM:object name="Port.camodel.in_GUI_212" id="212" sharing="PublishSubscribe" orderType="Receive" alignment="false">
+            <NOM:attribute name="MsgID" dataType="uintBE" />
+            <NOM:attribute name="MsgLen" dataType="uintBE" />
+            <NOM:attribute name="MilitaryCode" dataType="char" />
+            <NOM:attribute name="OperationPassword" dataType="char" />
+			<NOM:attribute name="Covariance" dataType="doubleBE" size="10" />
+        </NOM:object>
+        <NOM:object name="BaseEntity.PhysicalEntity.Platform.Aircraft" id="1" nameNotes="Aircraft 객체" sharing="Neither" orderType="Receive">
+            <NOM:attribute name="AccelerationVector" nameNotes="가속도벡터" dataType="AccelerationVectorStruct" />
+            <NOM:attribute name="AngularVelocityVector" nameNotes="각속도벡터" dataType="AngularVelocityVectorStruct" />
+            <NOM:attribute name="DeadReckoningAlgorithm" dataType="DeadReckoningAlgorithmEnum8" />
+            <NOM:attribute name="EntityType" dataType="EntityTypeStruct" />
+            <NOM:attribute name="EntityIdentifier" dataType="EntityIdentifierStruct" />
+            <NOM:attribute name="IsFrozen" dataType="boolean" />
+            <NOM:attribute name="Orientation" dataType="OrientationStruct" />
+            <NOM:attribute name="WorldLocation" dataType="WorldLocationStruct" />
+            <NOM:attribute name="VelocityVector" dataType="VelocityVectorStruct" />
+            <NOM:attribute name="AlternateEntityType" dataType="EntityTypeStruct" />
+            <NOM:attribute name="ArticulatedParametersArray" dataType="ArticulatedParameterStruct" />
+            <NOM:attribute name="CamouflageType" dataType="CamouflageEnum32" />
+            <NOM:attribute name="DamageState" dataType="DamageStatusEnum32" />
+            <NOM:attribute name="EngineSmokeOn" dataType="boolean" />
+            <NOM:attribute name="FirePowerDisabled" dataType="boolean" />
+            <NOM:attribute name="FlamesPresent" dataType="boolean" />
+            <NOM:attribute name="ForceIdentifier" dataType="ForceIdentifierEnum8" />
+            <NOM:attribute name="HasAmmunitionSupplyCap" dataType="boolean" />
+            <NOM:attribute name="HasFuelSupplyCap" dataType="boolean" />
+            <NOM:attribute name="HasRecoveryCap" dataType="boolean" />
+            <NOM:attribute name="HasRepairCap" dataType="boolean" />
+            <NOM:attribute name="Immobilized" dataType="boolean" />
+            <NOM:attribute name="IsConcealed" dataType="boolean" />
+            <NOM:attribute name="Marking" dataType="MarkingStruct" />
+            <NOM:attribute name="PowerPlantOn" dataType="boolean" />
+            <NOM:attribute name="SmokePlumePresent" dataType="boolean" />
+            <NOM:attribute name="TentDeployed" dataType="boolean" />
+            <NOM:attribute name="TrailingEffectsCode" dataType="TrailingEffectsCodeEnum32" />
+            <NOM:attribute name="AfterburnerOn" dataType="boolean" />
+            <NOM:attribute name="AntiCollisionLightsOn" dataType="boolean" />
+            <NOM:attribute name="BlackOutBrakeLightsOn" dataType="boolean" />
+            <NOM:attribute name="BlackOutLightsOn" dataType="boolean" />
+            <NOM:attribute name="BrakeLightsOn" dataType="boolean" />
+            <NOM:attribute name="FormationLightsOn" dataType="boolean" />
+            <NOM:attribute name="HatchState" dataType="HatchStateEnum32" />
+            <NOM:attribute name="HeadLightsOn" dataType="boolean" />
+            <NOM:attribute name="InteriorLightsOn" dataType="boolean" />
+            <NOM:attribute name="LandingLightsOn" dataType="boolean" />
+            <NOM:attribute name="LauncherRaised" dataType="boolean" />
+            <NOM:attribute name="NavigationLightsOn" dataType="boolean" />
+            <NOM:attribute name="RampDeployed" dataType="boolean" />
+            <NOM:attribute name="RunningLightsOn" dataType="boolean" />
+            <NOM:attribute name="SpotLightsOn" dataType="boolean" />
+            <NOM:attribute name="TailLightsOn" dataType="boolean" />
+        </NOM:object>
+        <NOM:object name="BaseEntity.PhysicalEntity.Munition" id="2" nameNotes="Munition 객체" sharing="Neither" orderType="Receive" alignment="false">
+            <NOM:attribute name="AccelerationVector" nameNotes="가속도벡터" dataType="AccelerationVectorStruct" />
+            <NOM:attribute name="AngularVelocityVector" nameNotes="각속도벡터" dataType="AngularVelocityVectorStruct" />
+            <NOM:attribute name="DeadReckoningAlgorithm" dataType="DeadReckoningAlgorithmEnum8" />
+            <NOM:attribute name="EntityType" dataType="EntityTypeStruct" />
+            <NOM:attribute name="EntityIdentifier" dataType="EntityIdentifierStruct" />
+            <NOM:attribute name="IsFrozen" dataType="boolean" />
+            <NOM:attribute name="Orientation" dataType="OrientationStruct" />
+            <NOM:attribute name="WorldLocation" dataType="WorldLocationStruct" />
+            <NOM:attribute name="VelocityVector" dataType="VelocityVectorStruct" />
+            <NOM:attribute name="AlternateEntityType" dataType="EntityTypeStruct" />
+            <NOM:attribute name="ArticulatedParametersArray" dataType="ArticulatedParameterStruct" />
+            <NOM:attribute name="CamouflageType" dataType="CamouflageEnum32" />
+            <NOM:attribute name="DamageState" dataType="DamageStatusEnum32" />
+            <NOM:attribute name="EngineSmokeOn" dataType="boolean" />
+            <NOM:attribute name="FirePowerDisabled" dataType="boolean" />
+            <NOM:attribute name="FlamesPresent" dataType="boolean" />
+            <NOM:attribute name="ForceIdentifier" dataType="ForceIdentifierEnum8" />
+            <NOM:attribute name="HasAmmunitionSupplyCap" dataType="boolean" />
+            <NOM:attribute name="HasFuelSupplyCap" dataType="boolean" />
+            <NOM:attribute name="HasRecoveryCap" dataType="boolean" />
+            <NOM:attribute name="HasRepairCap" dataType="boolean" />
+            <NOM:attribute name="Immobilized" dataType="boolean" />
+            <NOM:attribute name="IsConcealed" dataType="boolean" />
+            <NOM:attribute name="Marking" dataType="MarkingStruct" />
+            <NOM:attribute name="PowerPlantOn" dataType="boolean" />
+            <NOM:attribute name="SmokePlumePresent" dataType="boolean" />
+            <NOM:attribute name="TentDeployed" dataType="boolean" />
+            <NOM:attribute name="TrailingEffectsCode" dataType="TrailingEffectsCodeEnum32" />
+            <NOM:attribute name="LauncherFlashPresent" dataType="boolean" />
+        </NOM:object>
+        <NOM:object name="MunitionDetonation" id="257" nameNotes="MunitionDetonation메시지" sharing="Subscribe" orderType="Receive" alignment="false">
+            <NOM:attribute name="ArticulatedPartData" dataType="ArticulatedParameterStruct" />
+            <NOM:attribute name="DetonationLocation" dataType="WorldLocationStruct" />
+            <NOM:attribute name="DetonationResultCode" dataType="DetonationResultCodeEnum8" />
+            <NOM:attribute name="EventIdentifier" dataType="EventIdentifierStruct" />
+            <NOM:attribute name="FiringObjectIdentifier" dataType="RTIObjectIdStruct" />
+            <NOM:attribute name="FinalVelocityVector" dataType="VelocityVectorStruct" />
+            <NOM:attribute name="FuseType" dataType="FuseTypeEnum16" />
+            <NOM:attribute name="MunitionObjectIdentifier" dataType="RTIObjectIdStruct" />
+            <NOM:attribute name="MunitionType" dataType="EntityTypeStruct" />
+            <NOM:attribute name="QuntityFired" dataType="ushort" />
+            <NOM:attribute name="RateOfFire" dataType="ushort" />
+            <NOM:attribute name="RelativeDetonationLocation" dataType="RelativePositionStruct" />
+            <NOM:attribute name="TargetObjectIdentifier" dataType="RTIObjectIdStruct" />
+            <NOM:attribute name="WarheadType" dataType="WarheadTypeEnum16" />
+        </NOM:object>
+        <NOM:object name="StartResume" id="258" nameNotes="StartResume메시지" sharing="Publish" orderType="Receive" alignment="false">
+            <NOM:attribute name="OriginatingEntity" dataType="EntityIdentifierStruct" />
+            <NOM:attribute name="ReceivingEntity" dataType="EntityIdentifierStruct" />
+            <NOM:attribute name="RequestIdentifier" dataType="uint" />
+            <NOM:attribute name="RealWorldTime" dataType="ClockTimeStruct" />
+            <NOM:attribute name="SimulationTime" dataType="ClockTimeStruct" />
+        </NOM:object>
+        <NOM:object name="StopFreeze" id="259" nameNotes="StopFreeze메시지" sharing="Publish" orderType="Receive" alignment="false">
+            <NOM:attribute name="OriginatingEntity" dataType="EntityIdentifierStruct" />
+            <NOM:attribute name="ReceivingEntity" dataType="EntityIdentifierStruct" />
+            <NOM:attribute name="RequestIdentifier" dataType="uint" />
+            <NOM:attribute name="RealWorldTime" dataType="ClockTimeStruct" />
+            <NOM:attribute name="Reason" dataType="StopFreezeReasonEnum8" />
+            <NOM:attribute name="ReflectValues" dataType="boolean" />
+            <NOM:attribute name="RunInternalSimulationClock" dataType="boolean" />
+            <NOM:attribute name="UpdateAttributes" dataType="boolean" />
+        </NOM:object>
+        <NOM:object name="Acknowledge" id="260" nameNotes="Acknowledge메시지" sharing="Subscribe" orderType="Receive" alignment="false">
+            <NOM:attribute name="OriginatingEntity" dataType="EntityIdentifierStruct" />
+            <NOM:attribute name="ReceivingEntity" size="3" dataType="EntityIdentifierStruct" />
+            <NOM:attribute name="RequestIdentifier" dataType="uint" />
+            <NOM:attribute name="AcknowledgeFlag" dataType="AcknowledgeFlagEnum16" />
+            <NOM:attribute name="ResponseFlag" dataType="ResponseFlagEnum16" />
+        </NOM:object>
+    </NOM:objects>
+    <NOM:interactions>
+        <NOM:interaction name="TestInteraction" id="69906" nameNotes="test 객체" sharing="PublishSubscribe" orderType="Receive" alignment="false">
+            <NOM:parameter name="fieldUint" dataType="uint" />
+            <NOM:parameter name="fieldint" dataType="int" />
+            <NOM:parameter name="enumTest" dataType="DeadReckoningAlgorithmEnum8" />
+            <NOM:parameter name="fixedTest" fixedLength="10" dataType="fstring" />
+            <NOM:parameter name="fixedDatum" fixedLength="20" dataType="fdatum" />
+        </NOM:interaction>
+        <NOM:interaction name="GUI_Start" id="1001" nameNotes="시작" sharing="Publish" orderType="Receive" alignment="false">
+          <NOM:parameter name="Message1" dataType="uintBE" />
+        </NOM:interaction>
+    </NOM:interactions>
+    <NOM:dataTypes>
+        <NOM:basicTypes>
+            <NOM:basicType name="boolean" length="1" endian="little" signed="true" type="Bool" note="8bit value" />
+            <NOM:basicType name="integerBE" length="4" endian="big" signed="true" type="Integer" note="32bit integer, big endian" />
+            <NOM:basicType name="integer" length="4" endian="little" signed="true" type="Integer" note="32bit integer, little endian" />
+            <NOM:basicType name="unsignedIntegerBE" length="4" endian="big" signed="false" type="Integer" note="32bit unsigned integer, big endian" />
+            <NOM:basicType name="unsignedInteger" length="4" endian="little" signed="false" type="Integer" note="32bit unsigned integer, little endian" />
+            <NOM:basicType name="octet" length="1" endian="little" signed="true" type="Byte" note="8bit value" />
+            <NOM:basicType name="shortBE" length="2" endian="big" signed="true" type="Short" note="16bit integer(short), big endian" />
+            <NOM:basicType name="short" length="2" endian="little" signed="true" type="Short" note="16bit integer(short), little endian" />
+            <NOM:basicType name="int" length="4" endian="little" signed="true" type="Integer" note="32bit integer, little endian" />
+            <NOM:basicType name="intBE" length="4" endian="big" signed="true" type="Integer" note="32bit integer, big endian" />
+            <NOM:basicType name="uint" length="4" endian="little" signed="false" type="Integer" note="32bit integer, little endian" />
+            <NOM:basicType name="uintBE" length="4" endian="big" signed="false" type="Integer" note="32bit integer, big endian" />
+            <NOM:basicType name="int3" length="3" endian="little" signed="true" type="Integer" note="32bit integer, little endian" />
+            <NOM:basicType name="uint3" length="3" endian="little" signed="false" type="Integer" note="32bit integer, little endian" />
+            <NOM:basicType name="int3BE" length="3" endian="big" signed="true" type="Integer" note="32bit integer, little endian" />
+            <NOM:basicType name="uint3BE" length="3" endian="big" signed="false" type="Integer" note="32bit integer, little endian" />
+            <NOM:basicType name="ushort" length="2" endian="little" signed="false" type="Short" note="16bit integer(short), little endian" />
+            <NOM:basicType name="ushortBE" length="2" endian="big" signed="false" type="Short" note="16bit integer(short), big endian" />
+            <NOM:basicType name="unsignedShortBE" length="2" endian="big" signed="false" type="Short" note="16bit unsigned integer(short), big endian" />
+            <NOM:basicType name="unsignedShort" length="2" endian="little" signed="false" type="Short" note="16bit unsigned integer(short), little endian" />
+            <NOM:basicType name="float" length="4" endian="little" signed="true" type="Float" note="32bit float, little endian" />
+            <NOM:basicType name="floatBE" length="4" endian="big" signed="true" type="Float" note="32bit float, big endian" />
+            <NOM:basicType name="double" length="8" endian="little" signed="true" type="Double" note="32bit double, little endian" />
+            <NOM:basicType name="doubleBE" length="8" endian="big" signed="true" type="Double" note="32bit double, little endian" />
+            <NOM:basicType name="char" length="1" endian="little" signed="true" type="Char" note="8bit char value" />
+            <NOM:basicType name="unsignedChar" length="1" endian="little" signed="false" type="Char" note="8bit char value" />
+			<NOM:basicType name="char2" length="2" endian="little" signed="true" type="Char" note="16bit char value" />
+            <NOM:basicType name="unsignedChar2" length="2" endian="little" signed="false" type="Char" note="16bit char value" />
+            <NOM:basicType name="byte" length="1" endian="little" signed="false" type="Byte" note="8bit byte value" />
+            <NOM:basicType name="string" length="1" endian="little" signed="false" type="String" note="String" />
+            <NOM:basicType name="wstring" length="0" endian="little" signed="false" type="String" note="String" />
+            <NOM:basicType name="fstring" length="1" endian="little" signed="false" type="FixedString" note="FixedString" />
+            <NOM:basicType name="fwstring" length="0" endian="little" signed="false" type="FixedString" note="FixedString" />
+            <NOM:basicType name="fdatum" length="0" endian="little" signed="false" type="FixedDatum" note="FixedDatum" />
+            <NOM:basicType name="var" length="0" endian="little" signed="false" type="Variable" note="Variable" />
+        </NOM:basicTypes>
+        <NOM:enumerationTypes>
+            <NOM:enumerationType name="DeadReckoningAlgorithmEnum8" length="1" nameNotes="데드레코닝 알고리즘">
+                <NOM:enumerator name="Other" value="0" />
+                <NOM:enumerator name="Static" value="1" />
+                <NOM:enumerator name="DRM_FPW" value="2" />
+                <NOM:enumerator name="DRM_RPW" value="3" />
+                <NOM:enumerator name="DRM_RVW" value="4" />
+                <NOM:enumerator name="DRM_FVW" value="5" />
+                <NOM:enumerator name="DRM_FPB" value="6" />
+                <NOM:enumerator name="DRM_RPB" value="7" />
+                <NOM:enumerator name="DRM_RVB" value="8" />
+                <NOM:enumerator name="DRM_FVB" value="9" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="ParameterTypeEnum32" length="4" nameNotes="">
+                <NOM:enumerator name="ArticulatedPart" value="0" />
+                <NOM:enumerator name="AttachedPart" value="1" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="ArticulatedPartsTypeEnum32" length="4" nameNotes="">
+                <NOM:enumerator name="Other" value="0" />
+                <NOM:enumerator name="Rudder" value="1024" />
+                <NOM:enumerator name="LeftFlap" value="1056" />
+                <NOM:enumerator name="RightFlap" value="1088" />
+                <NOM:enumerator name="LeftAileron" value="1120" />
+                <NOM:enumerator name="RightAileron" value="1152" />
+                <NOM:enumerator name="HelicopterMainRotor" value="1184" />
+                <NOM:enumerator name="HelicopterTailRotor" value="1216" />
+                <NOM:enumerator name="OtherAircraftControlSurfaces" value="1248" />
+                <NOM:enumerator name="Periscope" value="2048" />
+                <NOM:enumerator name="GenericAntenna" value="2080" />
+                <NOM:enumerator name="Snorkel" value="2112" />
+                <NOM:enumerator name="OtherExtendableParts" value="2144" />
+                <NOM:enumerator name="LandingGear" value="3072" />
+                <NOM:enumerator name="TailHook" value="3104" />
+                <NOM:enumerator name="SpeedBrake" value="3136" />
+                <NOM:enumerator name="LeftWeaponBayDoors" value="3168" />
+                <NOM:enumerator name="RightWeaponBayDoors" value="3200" />
+                <NOM:enumerator name="TankOrAPChatch" value="3232" />
+                <NOM:enumerator name="Wingsweep" value="3264" />
+                <NOM:enumerator name="BridgeLauncher" value="3296" />
+                <NOM:enumerator name="BridgeSection1" value="3328" />
+                <NOM:enumerator name="BridgeSection2" value="3360" />
+                <NOM:enumerator name="BridgeSection3" value="3392" />
+                <NOM:enumerator name="PrimaryBlade1" value="3424" />
+                <NOM:enumerator name="PrimaryBlade2" value="3456" />
+                <NOM:enumerator name="PrimaryBoom" value="3488" />
+                <NOM:enumerator name="PrimaryLauncherArm" value="3520" />
+                <NOM:enumerator name="OtherFixedPositionParts" value="3552" />
+                <NOM:enumerator name="PrimaryTurretNumber1" value="4096" />
+                <NOM:enumerator name="PrimaryTurretNumber2" value="4128" />
+                <NOM:enumerator name="PrimaryTurretNumber3" value="4160" />
+                <NOM:enumerator name="PrimaryTurretNumber4" value="4192" />
+                <NOM:enumerator name="PrimaryTurretNumber5" value="4224" />
+                <NOM:enumerator name="PrimaryTurretNumber6" value="4256" />
+                <NOM:enumerator name="PrimaryTurretNumber7" value="4288" />
+                <NOM:enumerator name="PrimaryTurretNumber8" value="4320" />
+                <NOM:enumerator name="PrimaryTurretNumber9" value="4352" />
+                <NOM:enumerator name="PrimaryTurretNumber10" value="4384" />
+                <NOM:enumerator name="PrimaryGunNumber1" value="4416" />
+                <NOM:enumerator name="PrimaryGunNumber2" value="4448" />
+                <NOM:enumerator name="PrimaryGunNumber3" value="4480" />
+                <NOM:enumerator name="PrimaryGunNumber4" value="4512" />
+                <NOM:enumerator name="PrimaryGunNumber5" value="4544" />
+                <NOM:enumerator name="PrimaryGunNumber6" value="4576" />
+                <NOM:enumerator name="PrimaryGunNumber7" value="4608" />
+                <NOM:enumerator name="PrimaryGunNumber8" value="4640" />
+                <NOM:enumerator name="PrimaryGunNumber9" value="4672" />
+                <NOM:enumerator name="PrimaryGunNumber10" value="4704" />
+                <NOM:enumerator name="PrimaryLauncher1" value="4736" />
+                <NOM:enumerator name="PrimaryLauncher2" value="4768" />
+                <NOM:enumerator name="PrimaryLauncher3" value="4800" />
+                <NOM:enumerator name="PrimaryLauncher4" value="4832" />
+                <NOM:enumerator name="PrimaryLauncher5" value="4864" />
+                <NOM:enumerator name="PrimaryLauncher6" value="4896" />
+                <NOM:enumerator name="PrimaryLauncher7" value="4928" />
+                <NOM:enumerator name="PrimaryLauncher8" value="4960" />
+                <NOM:enumerator name="PrimaryLauncher9" value="4992" />
+                <NOM:enumerator name="PrimaryLauncher10" value="5024" />
+                <NOM:enumerator name="PrimaryDefenseSystems1" value="5056" />
+                <NOM:enumerator name="PrimaryDefenseSystems2" value="5088" />
+                <NOM:enumerator name="PrimaryDefenseSystems3" value="5120" />
+                <NOM:enumerator name="PrimaryDefenseSystems4" value="5152" />
+                <NOM:enumerator name="PrimaryDefenseSystems5" value="5184" />
+                <NOM:enumerator name="PrimaryDefenseSystems6" value="5126" />
+                <NOM:enumerator name="PrimaryDefenseSystems7" value="5248" />
+                <NOM:enumerator name="PrimaryDefenseSystems8" value="5280" />
+                <NOM:enumerator name="PrimaryDefenseSystems9" value="5312" />
+                <NOM:enumerator name="PrimaryDefenseSystems10" value="5344" />
+                <NOM:enumerator name="PrimaryRadar1" value="5376" />
+                <NOM:enumerator name="PrimaryRadar2" value="5408" />
+                <NOM:enumerator name="PrimaryRadar3" value="5440" />
+                <NOM:enumerator name="PrimaryRadar4" value="5472" />
+                <NOM:enumerator name="PrimaryRadar5" value="5504" />
+                <NOM:enumerator name="PrimaryRadar6" value="5536" />
+                <NOM:enumerator name="PrimaryRadar7" value="5568" />
+                <NOM:enumerator name="PrimaryRadar8" value="5600" />
+                <NOM:enumerator name="PrimaryRadar9" value="5632" />
+                <NOM:enumerator name="PrimaryRadar10" value="5664" />
+                <NOM:enumerator name="SecondaryTurretNumber1" value="5696" />
+                <NOM:enumerator name="SecondaryTurretNumber2" value="5728" />
+                <NOM:enumerator name="SecondaryTurretNumber3" value="5760" />
+                <NOM:enumerator name="SecondaryTurretNumber4" value="5792" />
+                <NOM:enumerator name="SecondaryTurretNumber5" value="5824" />
+                <NOM:enumerator name="SecondaryTurretNumber6" value="5856" />
+                <NOM:enumerator name="SecondaryTurretNumber7" value="5888" />
+                <NOM:enumerator name="SecondaryTurretNumber8" value="5920" />
+                <NOM:enumerator name="SecondaryTurretNumber9" value="5952" />
+                <NOM:enumerator name="SecondaryTurretNumber10" value="5984" />
+                <NOM:enumerator name="SecondaryGunNumber1" value="6016" />
+                <NOM:enumerator name="SecondaryGunNumber2" value="6048" />
+                <NOM:enumerator name="SecondaryGunNumber3" value="6080" />
+                <NOM:enumerator name="SecondaryGunNumber4" value="6112" />
+                <NOM:enumerator name="SecondaryGunNumber5" value="6144" />
+                <NOM:enumerator name="SecondaryGunNumber6" value="6176" />
+                <NOM:enumerator name="SecondaryGunNumber7" value="6208" />
+                <NOM:enumerator name="SecondaryGunNumber8" value="6240" />
+                <NOM:enumerator name="SecondaryGunNumber9" value="6272" />
+                <NOM:enumerator name="SecondaryGunNumber10" value="6304" />
+                <NOM:enumerator name="SecondaryLauncher1" value="6336" />
+                <NOM:enumerator name="SecondaryLauncher2" value="6368" />
+                <NOM:enumerator name="SecondaryLauncher3" value="6400" />
+                <NOM:enumerator name="SecondaryLauncher4" value="6432" />
+                <NOM:enumerator name="SecondaryLauncher5" value="6464" />
+                <NOM:enumerator name="SecondaryLauncher6" value="6496" />
+                <NOM:enumerator name="SecondaryLauncher7" value="6528" />
+                <NOM:enumerator name="SecondaryLauncher8" value="6560" />
+                <NOM:enumerator name="SecondaryLauncher9" value="6592" />
+                <NOM:enumerator name="SecondaryLauncher10" value="6624" />
+                <NOM:enumerator name="SecondaryDefenseSystems1" value="6656" />
+                <NOM:enumerator name="SecondaryDefenseSystems2" value="6688" />
+                <NOM:enumerator name="SecondaryDefenseSystems3" value="6720" />
+                <NOM:enumerator name="SecondaryDefenseSystems4" value="6752" />
+                <NOM:enumerator name="SecondaryDefenseSystems5" value="6784" />
+                <NOM:enumerator name="SecondaryDefenseSystems6" value="6816" />
+                <NOM:enumerator name="SecondaryDefenseSystems7" value="6848" />
+                <NOM:enumerator name="SecondaryDefenseSystems8" value="6880" />
+                <NOM:enumerator name="SecondaryDefenseSystems9" value="6912" />
+                <NOM:enumerator name="SecondaryDefenseSystems10" value="6944" />
+                <NOM:enumerator name="SecondaryRadar1" value="6976" />
+                <NOM:enumerator name="SecondaryRadar2" value="7008" />
+                <NOM:enumerator name="SecondaryRadar3" value="7040" />
+                <NOM:enumerator name="SecondaryRadar4" value="7072" />
+                <NOM:enumerator name="SecondaryRadar5" value="7104" />
+                <NOM:enumerator name="SecondaryRadar6" value="7136" />
+                <NOM:enumerator name="SecondaryRadar7" value="7168" />
+                <NOM:enumerator name="SecondaryRadar8" value="7200" />
+                <NOM:enumerator name="SecondaryRadar9" value="7232" />
+                <NOM:enumerator name="SecondaryRadar10" value="7264" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="ArticulatedTypeMetricEnum32" length="4" nameNotes="">
+                <NOM:enumerator name="Position" value="1" />
+                <NOM:enumerator name="PositionRate" value="2" />
+                <NOM:enumerator name="Extension" value="3" />
+                <NOM:enumerator name="ExtensionRate" value="4" />
+                <NOM:enumerator name="X" value="5" />
+                <NOM:enumerator name="XRate" value="6" />
+                <NOM:enumerator name="Y" value="7" />
+                <NOM:enumerator name="YRate" value="8" />
+                <NOM:enumerator name="Z" value="9" />
+                <NOM:enumerator name="ZRate" value="10" />
+                <NOM:enumerator name="Azimuth" value="11" />
+                <NOM:enumerator name="AzimuthRate" value="12" />
+                <NOM:enumerator name="Elevation" value="13" />
+                <NOM:enumerator name="ElevationRate" value="14" />
+                <NOM:enumerator name="Rotation" value="15" />
+                <NOM:enumerator name="RotationRate" value="16" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="StationEnum32" length="4" nameNotes="">
+                <NOM:enumerator name="Nothing_Empty" value="0" />
+                <NOM:enumerator name="Fuselage_Station1" value="512" />
+                <NOM:enumerator name="Fuselage_Station2" value="513" />
+                <NOM:enumerator name="Fuselage_Station3" value="514" />
+                <NOM:enumerator name="Fuselage_Station4" value="515" />
+                <NOM:enumerator name="Fuselage_Station5" value="516" />
+                <NOM:enumerator name="Fuselage_Station6" value="517" />
+                <NOM:enumerator name="Fuselage_Station7" value="518" />
+                <NOM:enumerator name="Fuselage_Station8" value="519" />
+                <NOM:enumerator name="Fuselage_Station9" value="520" />
+                <NOM:enumerator name="LeftWingStation1" value="640" />
+                <NOM:enumerator name="LeftWingStation2" value="641" />
+                <NOM:enumerator name="LeftWingStation3" value="642" />
+                <NOM:enumerator name="LeftWingStation4" value="643" />
+                <NOM:enumerator name="LeftWingStation5" value="644" />
+                <NOM:enumerator name="LeftWingStation6" value="645" />
+                <NOM:enumerator name="LeftWingStation7" value="646" />
+                <NOM:enumerator name="LeftWingStation8" value="647" />
+                <NOM:enumerator name="LeftWingStation9" value="648" />
+                <NOM:enumerator name="RightWingStation1" value="768" />
+                <NOM:enumerator name="RightWingStation2" value="769" />
+                <NOM:enumerator name="RightWingStation3" value="770" />
+                <NOM:enumerator name="RightWingStation4" value="771" />
+                <NOM:enumerator name="RightWingStation5" value="772" />
+                <NOM:enumerator name="RightWingStation6" value="773" />
+                <NOM:enumerator name="RightWingStation7" value="774" />
+                <NOM:enumerator name="RightWingStation8" value="775" />
+                <NOM:enumerator name="RightWingStation9" value="776" />
+                <NOM:enumerator name="M16A42_rifle" value="896" />
+                <NOM:enumerator name="M249_SAW" value="897" />
+                <NOM:enumerator name="M60_Machine_gun" value="898" />
+                <NOM:enumerator name="M203_Grenade_Launcher" value="899" />
+                <NOM:enumerator name="M136_AT4" value="900" />
+                <NOM:enumerator name="M47_Dragon" value="901" />
+                <NOM:enumerator name="AAWS_M_Javelin" value="902" />
+                <NOM:enumerator name="M18A1_Claymore_Mine" value="903" />
+                <NOM:enumerator name="MK19_Grenade_Launcher" value="904" />
+                <NOM:enumerator name="M2_Machine_Gun" value="905" />
+                <NOM:enumerator name="Other_attached_parts" value="906" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="CamouflageEnum32" length="4" nameNotes="">
+                <NOM:enumerator name="UniformPaintScheme" value="0" />
+                <NOM:enumerator name="DesertCamouflage" value="1" />
+                <NOM:enumerator name="WinterCamouflage" value="2" />
+                <NOM:enumerator name="ForestCamouflage" value="3" />
+                <NOM:enumerator name="GenericCamouflage" value="4" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="DamageStatusEnum32" length="4" nameNotes="">
+                <NOM:enumerator name="NoDamage" value="0" />
+                <NOM:enumerator name="SlightDamage" value="1" />
+                <NOM:enumerator name="ModerateDamage" value="2" />
+                <NOM:enumerator name="Destoyed" value="3" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="ForceIdentifierEnum8" length="1" nameNotes="">
+                <NOM:enumerator name="Other" value="0" />
+                <NOM:enumerator name="Friendly" value="1" />
+                <NOM:enumerator name="Opposing" value="2" />
+                <NOM:enumerator name="Neutral" value="3" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="MarkingEncodingEnum8" length="1" nameNotes="">
+                <NOM:enumerator name="Other" value="0" />
+                <NOM:enumerator name="ASCII" value="1" />
+                <NOM:enumerator name="ArmyMarkingCCTT" value="2" />
+                <NOM:enumerator name="DigitChevron" value="3" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="TrailingEffectsCodeEnum32" length="4" nameNotes="">
+                <NOM:enumerator name="NoTrail" value="0" />
+                <NOM:enumerator name="SmallTrail" value="1" />
+                <NOM:enumerator name="MediumTrail" value="2" />
+                <NOM:enumerator name="LargeTrail" value="3" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="HatchStateEnum32" length="4" nameNotes="">
+                <NOM:enumerator name="NotApplicable" value="0" />
+                <NOM:enumerator name="PrimaryHatchIsClosed" value="1" />
+                <NOM:enumerator name="PrimaryHatchIsPopped" value="2" />
+                <NOM:enumerator name="PrimaryHatchIsPoppedAndPersonIsVisibleUnderHatch" value="3" />
+                <NOM:enumerator name="PrimaryHatchIsOpen" value="4" />
+                <NOM:enumerator name="PrimaryHatchIsOpenAndPersonIsVisible" value="5" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="DetonationResultCodeEnum8" length="1" nameNotes="">
+                <NOM:enumerator name="Other" value="0" />
+                <NOM:enumerator name="EntityImpact" value="1" />
+                <NOM:enumerator name="EntityProximateDetonation" value="2" />
+                <NOM:enumerator name="GroundImpact" value="3" />
+                <NOM:enumerator name="GroundProximateDetonation" value="4" />
+                <NOM:enumerator name="Detonation" value="5" />
+                <NOM:enumerator name="None" value="6" />
+                <NOM:enumerator name="HE_hit_Small" value="7" />
+                <NOM:enumerator name="HE_hit_Medium" value="8" />
+                <NOM:enumerator name="HE_hit_Large" value="9" />
+                <NOM:enumerator name="ArmorPiercingHit" value="10" />
+                <NOM:enumerator name="DirtBlast_Small" value="11" />
+                <NOM:enumerator name="DirtBlast_Medium" value="12" />
+                <NOM:enumerator name="DirtBlast_Large" value="13" />
+                <NOM:enumerator name="WaterBlast_Small" value="14" />
+                <NOM:enumerator name="WaterBlast_Medium" value="15" />
+                <NOM:enumerator name="WaterBlast_Large" value="16" />
+                <NOM:enumerator name="AirHit" value="17" />
+                <NOM:enumerator name="BuildingHit_Small" value="18" />
+                <NOM:enumerator name="BuildingHit_Medium" value="19" />
+                <NOM:enumerator name="BuildingHit_Large" value="20" />
+                <NOM:enumerator name="MineClearingLineCharge" value="21" />
+                <NOM:enumerator name="EnvironmentObjectImpact" value="22" />
+                <NOM:enumerator name="EnvironmentObjectProximateDetonation" value="23" />
+                <NOM:enumerator name="WaterImpact" value="24" />
+                <NOM:enumerator name="AirBurst" value="25" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="FuseTypeEnum16" length="2" nameNotes="">
+                <NOM:enumerator name="Other" value="0" />
+                <NOM:enumerator name="IntelligentInfluence" value="10" />
+                <NOM:enumerator name="Sensor" value="20" />
+                <NOM:enumerator name="SelfDestruct" value="30" />
+                <NOM:enumerator name="UltraQuick" value="40" />
+                <NOM:enumerator name="Body" value="50" />
+                <NOM:enumerator name="DeepIntrusion" value="60" />
+                <NOM:enumerator name="Multifunction" value="100" />
+                <NOM:enumerator name="PointDetonation_PD" value="200" />
+                <NOM:enumerator name="BaseDetonation_BD" value="300" />
+                <NOM:enumerator name="Contact" value="1000" />
+                <NOM:enumerator name="ContactInstantImpact" value="1100" />
+                <NOM:enumerator name="ContactDelayed" value="1200" />
+                <NOM:enumerator name="Contact10msDelay" value="1201" />
+                <NOM:enumerator name="Contact20msDelay" value="1202" />
+                <NOM:enumerator name="Contact50msDelay" value="1205" />
+                <NOM:enumerator name="Contact60msDelay" value="1206" />
+                <NOM:enumerator name="Contact100msDelay" value="1210" />
+                <NOM:enumerator name="Contact125msDelay" value="1212" />
+                <NOM:enumerator name="Contact250msDelay" value="1225" />
+                <NOM:enumerator name="ContactElectronicObliqueContact" value="1300" />
+                <NOM:enumerator name="ContactGraze" value="1400" />
+                <NOM:enumerator name="ContactCrush" value="1500" />
+                <NOM:enumerator name="ContactHydrostatic" value="1600" />
+                <NOM:enumerator name="ContactMechanical" value="1700" />
+                <NOM:enumerator name="ContactChemical" value="1800" />
+                <NOM:enumerator name="ContactPiezoelectric" value="1900" />
+                <NOM:enumerator name="ContactPointInitiating" value="1910" />
+                <NOM:enumerator name="ContactPointInitiatingBaseDetonating" value="1920" />
+                <NOM:enumerator name="ContactBaseDetonating" value="1930" />
+                <NOM:enumerator name="ContactBallisticCapAndBase" value="1940" />
+                <NOM:enumerator name="ContactBase" value="1950" />
+                <NOM:enumerator name="ContactNose" value="1960" />
+                <NOM:enumerator name="ContactFittedInStandoffProbe" value="1970" />
+                <NOM:enumerator name="ContactNonAligned" value="1980" />
+                <NOM:enumerator name="Timed" value="2000" />
+                <NOM:enumerator name="TimedProgrammable" value="2100" />
+                <NOM:enumerator name="TimedBurnout" value="2200" />
+                <NOM:enumerator name="TimedPyrotechnic" value="2300" />
+                <NOM:enumerator name="TimedElectronic" value="2400" />
+                <NOM:enumerator name="TimedBaseDelay" value="2500" />
+                <NOM:enumerator name="TimedReinforcedNoseImpactDelay" value="2600" />
+                <NOM:enumerator name="TimedShortDelayImpact" value="2700" />
+                <NOM:enumerator name="Timed10msDelay" value="2701" />
+                <NOM:enumerator name="Timed20msDelay" value="2702" />
+                <NOM:enumerator name="Timed50msDelay" value="2705" />
+                <NOM:enumerator name="Timed60msDelay" value="2706" />
+                <NOM:enumerator name="Timed100msDelay" value="2710" />
+                <NOM:enumerator name="Timed125msDelay" value="2712" />
+                <NOM:enumerator name="Timed250msDelay" value="2725" />
+                <NOM:enumerator name="TimedNoseMountedVariableDelay" value="2800" />
+                <NOM:enumerator name="TimedLongDelaySide" value="2900" />
+                <NOM:enumerator name="TimedSelectableDelay" value="2910" />
+                <NOM:enumerator name="TimedImpact" value="2920" />
+                <NOM:enumerator name="TimedSequence" value="2930" />
+                <NOM:enumerator name="Proximity" value="3000" />
+                <NOM:enumerator name="ProximityActiveLaser" value="3100" />
+                <NOM:enumerator name="ProximityMagneticMagpolarity" value="3200" />
+                <NOM:enumerator name="ProximityActiveDopplerRadar" value="3300" />
+                <NOM:enumerator name="ProximityRadioFrequencyRF" value="3400" />
+                <NOM:enumerator name="ProximityProgrammable" value="3500" />
+                <NOM:enumerator name="ProximityProgrammablePrefragmented" value="3600" />
+                <NOM:enumerator name="ProximityInfrared" value="3700" />
+                <NOM:enumerator name="Command" value="4000" />
+                <NOM:enumerator name="CommandElectronicRemotelySet" value="4100" />
+                <NOM:enumerator name="Altitude" value="5000" />
+                <NOM:enumerator name="AltitudeRadioAltimeter" value="5100" />
+                <NOM:enumerator name="AltitudeAirBurst" value="5200" />
+                <NOM:enumerator name="Depth" value="6000" />
+                <NOM:enumerator name="Acoustic" value="7000" />
+                <NOM:enumerator name="Pressure" value="8000" />
+                <NOM:enumerator name="PressureDelay" value="8010" />
+                <NOM:enumerator name="Inert" value="8100" />
+                <NOM:enumerator name="Dummy" value="8110" />
+                <NOM:enumerator name="Practice" value="8120" />
+                <NOM:enumerator name="PlugRepresenting" value="8130" />
+                <NOM:enumerator name="Training" value="8150" />
+                <NOM:enumerator name="Pyrotechnic" value="9000" />
+                <NOM:enumerator name="PyrotechnicDelay" value="9010" />
+                <NOM:enumerator name="ElectroOptical" value="9100" />
+                <NOM:enumerator name="ElectroMechanical" value="9110" />
+                <NOM:enumerator name="ElectroMechanicalNose" value="9120" />
+                <NOM:enumerator name="Strikerless" value="9200" />
+                <NOM:enumerator name="StrikerlessNoseImpact" value="9210" />
+                <NOM:enumerator name="StrikerlessCompressionIgnition" value="9220" />
+                <NOM:enumerator name="CompressionIgnition" value="9300" />
+                <NOM:enumerator name="CompressionIgnitionStrikerlessNoseImpact" value="9310" />
+                <NOM:enumerator name="Percussion" value="9400" />
+                <NOM:enumerator name="PercussionInstantaneous" value="9410" />
+                <NOM:enumerator name="Electronic" value="9500" />
+                <NOM:enumerator name="ElectronicInternallyMounted" value="9510" />
+                <NOM:enumerator name="ElectronicRangeSetting" value="9520" />
+                <NOM:enumerator name="ElectronicProgrammed" value="9530" />
+                <NOM:enumerator name="Mechanical" value="9600" />
+                <NOM:enumerator name="MechanicalNose" value="9610" />
+                <NOM:enumerator name="MechanicalTail" value="9620" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="WarheadTypeEnum16" length="2" nameNotes="">
+                <NOM:enumerator name="Other" value="0" />
+                <NOM:enumerator name="CargoVariableSubmunitions" value="10" />
+                <NOM:enumerator name="FuelAirExplosive" value="20" />
+                <NOM:enumerator name="GlassBeads" value="30" />
+                <NOM:enumerator name="Warhead_1um" value="31" />
+                <NOM:enumerator name="Warhead_5um" value="32" />
+                <NOM:enumerator name="Warhead_10um" value="33" />
+                <NOM:enumerator name="HighExplosive" value="1000" />
+                <NOM:enumerator name="HE_Plastic" value="1100" />
+                <NOM:enumerator name="HE_Incendiary" value="1200" />
+                <NOM:enumerator name="HE_Fragmentation" value="1300" />
+                <NOM:enumerator name="HE_Antitank" value="1400" />
+                <NOM:enumerator name="HE_Bomblets" value="1500" />
+                <NOM:enumerator name="HE_ShapedCharge" value="1600" />
+                <NOM:enumerator name="HE_ContinuousRod" value="1610" />
+                <NOM:enumerator name="HE_TungstenBall" value="1615" />
+                <NOM:enumerator name="HE_BlastFragmentation" value="1620" />
+                <NOM:enumerator name="HE_SteerableDartswithHE" value="1625" />
+                <NOM:enumerator name="HE_Darts" value="1630" />
+                <NOM:enumerator name="HE_Flechettes" value="1640" />
+                <NOM:enumerator name="HE_DirectedFragmentation" value="1650" />
+                <NOM:enumerator name="HE_SemiArmorPiercing" value="1645" />
+                <NOM:enumerator name="HE_SemiArmorPiercingFragmentation" value="1655" />
+                <NOM:enumerator name="HE_HollowCharge" value="1660" />
+                <NOM:enumerator name="HE_DoubleHollowCharge" value="1665" />
+                <NOM:enumerator name="HE_GeneralPurpose" value="1670" />
+                <NOM:enumerator name="HE_BlastPenetrator" value="1675" />
+                <NOM:enumerator name="HE_RodPenetrator" value="1680" />
+                <NOM:enumerator name="HE_Antipersonnel" value="1685" />
+                <NOM:enumerator name="Smoke" value="2000" />
+                <NOM:enumerator name="Illumination" value="3000" />
+                <NOM:enumerator name="Practice" value="4000" />
+                <NOM:enumerator name="Kinetic" value="5000" />
+                <NOM:enumerator name="Mines" value="6000" />
+                <NOM:enumerator name="Nuclear" value="7000" />
+                <NOM:enumerator name="NuclearIMT" value="7010" />
+                <NOM:enumerator name="ChemicalGeneral" value="8000" />
+                <NOM:enumerator name="ChemicalBlisterAgent" value="8100" />
+                <NOM:enumerator name="HD_Mustard" value="8110" />
+                <NOM:enumerator name="ThickenedHD_Mustard" value="8115" />
+                <NOM:enumerator name="DustyHD_Mustard" value="8120" />
+                <NOM:enumerator name="ChemicalBloodAgent" value="8200" />
+                <NOM:enumerator name="AC_HCN" value="8210" />
+                <NOM:enumerator name="CK_CNCI" value="8215" />
+                <NOM:enumerator name="CG_Phosgene" value="8220" />
+                <NOM:enumerator name="ChemicalNerveAgent" value="8300" />
+                <NOM:enumerator name="VX" value="8310" />
+                <NOM:enumerator name="ThickenedVX" value="8315" />
+                <NOM:enumerator name="DustyVX" value="8320" />
+                <NOM:enumerator name="GA_Tabun" value="8325" />
+                <NOM:enumerator name="ThickenedGA_Tabun" value="8330" />
+                <NOM:enumerator name="DustyGA_Tabun" value="8335" />
+                <NOM:enumerator name="GB_Sarin" value="8340" />
+                <NOM:enumerator name="ThickenedGB_Sarin" value="8345" />
+                <NOM:enumerator name="DustyGB_Sarin" value="8350" />
+                <NOM:enumerator name="GD_Soman" value="8355" />
+                <NOM:enumerator name="ThickenedGD_Soman" value="8360" />
+                <NOM:enumerator name="DustyGD_Soman" value="8365" />
+                <NOM:enumerator name="GF" value="8370" />
+                <NOM:enumerator name="ThickenedGF" value="8375" />
+                <NOM:enumerator name="DustyGF" value="8380" />
+                <NOM:enumerator name="Biological" value="9000" />
+                <NOM:enumerator name="BiologicalVirus" value="9100" />
+                <NOM:enumerator name="BiologicalBacteria" value="9200" />
+                <NOM:enumerator name="BiologicalRickettsia" value="9300" />
+                <NOM:enumerator name="BiologicalGeneticallyModifiedMicroOrganisms" value="9400" />
+                <NOM:enumerator name="BiologicalToxin" value="9500" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="StopFreezeReasonEnum8" length="1" nameNotes="">
+                <NOM:enumerator name="Other" value="0" />
+                <NOM:enumerator name="Recess" value="1" />
+                <NOM:enumerator name="Termination" value="2" />
+                <NOM:enumerator name="SystemFailure" value="3" />
+                <NOM:enumerator name="SecurityViolation" value="4" />
+                <NOM:enumerator name="EntityReconstitution" value="5" />
+                <NOM:enumerator name="StopForReset" value="6" />
+                <NOM:enumerator name="StopForRestart" value="7" />
+                <NOM:enumerator name="AbortTrainingResumeTacOps" value="8" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="AcknowledgeFlagEnum16" length="2" nameNotes="">
+                <NOM:enumerator name="CreateEntity" value="1" />
+                <NOM:enumerator name="RemoveEntity" value="2" />
+                <NOM:enumerator name="StartResume" value="3" />
+                <NOM:enumerator name="StopFreeze" value="4" />
+            </NOM:enumerationType>
+            <NOM:enumerationType name="ResponseFlagEnum16" length="2" nameNotes="">
+                <NOM:enumerator name="Other" value="0" />
+                <NOM:enumerator name="AbleToComply" value="1" />
+                <NOM:enumerator name="UnableToComply" value="2" />
+            </NOM:enumerationType>
+        </NOM:enumerationTypes>
+        <NOM:complexTypes>
+            <NOM:complexType name="AccelerationVectorStruct" nameNotes="201">
+                <NOM:fieldType name="XAcceleration" nameNotes="" dataType="float" />
+                <NOM:fieldType name="YAcceleration" nameNotes="" dataType="float" />
+                <NOM:fieldType name="ZAcceleration" nameNotes="" dataType="float" />
+            </NOM:complexType>
+            <NOM:complexType name="AngularVelocityVectorStruct" nameNotes="">
+                <NOM:fieldType name="XAngularVelocity" nameNotes="" dataType="float" />
+                <NOM:fieldType name="YAngularVelocity" nameNotes="" dataType="float" />
+                <NOM:fieldType name="ZAngularVelocity" nameNotes="" dataType="float" />
+            </NOM:complexType>
+            <NOM:complexType name="EntityTypeStruct" nameNotes="" encodingType="Sequential">
+                <NOM:fieldType name="EntityKind" nameNotes="" dataType="octet" />
+                <NOM:fieldType name="Domain" nameNotes="" dataType="octet" />
+                <NOM:fieldType name="CountryCode" nameNotes="" dataType="ushort" />
+                <NOM:fieldType name="Category" nameNotes="" dataType="octet" />
+                <NOM:fieldType name="Subcategory" nameNotes="" dataType="octet" />
+                <NOM:fieldType name="Specific" nameNotes="" dataType="octet" />
+                <NOM:fieldType name="Extra" nameNotes="" dataType="octet" />
+            </NOM:complexType>
+            <NOM:complexType name="FederateIdentifierStruct" nameNotes="">
+                <NOM:fieldType name="SiteID" nameNotes="" dataType="ushort" />
+                <NOM:fieldType name="ApplicationID" nameNotes="" dataType="ushort" />
+            </NOM:complexType>
+            <NOM:complexType name="EntityIdentifierStruct" nameNotes="">
+                <NOM:fieldType name="FederateIdentifier" nameNotes="" dataType="FederateIdentifierStruct" />
+                <NOM:fieldType name="EntityNumber" nameNotes="" dataType="ushort" />
+            </NOM:complexType>
+            <NOM:complexType name="OrientationStruct" nameNotes="">
+                <NOM:fieldType name="Psi" nameNotes="" dataType="float" />
+                <NOM:fieldType name="Theta" nameNotes="" dataType="float" />
+                <NOM:fieldType name="Phi" nameNotes="" dataType="float" />
+            </NOM:complexType>
+            <NOM:complexType name="WorldLocationStruct" nameNotes="" encodingType="Sequential">
+                <NOM:fieldType name="X" nameNotes="" dataType="double" />
+                <NOM:fieldType name="Y" nameNotes="" dataType="double" />
+                <NOM:fieldType name="Z" nameNotes="" dataType="double" />
+            </NOM:complexType>
+            <NOM:complexType name="VelocityVectorStruct" nameNotes="">
+                <NOM:fieldType name="XVelocity" nameNotes="" dataType="float" />
+                <NOM:fieldType name="YVelocity" nameNotes="" dataType="float" />
+                <NOM:fieldType name="ZVelocity" nameNotes="" dataType="float" />
+            </NOM:complexType>
+            <NOM:complexType name="ArticulatedPartsStruct" nameNotes="">
+                <NOM:fieldType name="Class" nameNotes="" dataType="ArticulatedPartsTypeEnum32" />
+                <NOM:fieldType name="TypeMetric" nameNotes="" dataType="ArticulatedTypeMetricEnum32" />
+                <NOM:fieldType name="Value" nameNotes="" dataType="float" />
+            </NOM:complexType>
+            <NOM:complexType name="AttachedPartsStruct" nameNotes="">
+                <NOM:fieldType name="Station" nameNotes="" dataType="StationEnum32" />
+                <NOM:fieldType name="StoreType" nameNotes="" dataType="EntityTypeStruct" />
+            </NOM:complexType>
+            <NOM:complexType name="ParameterValueStruct" nameNotes="">
+                <NOM:fieldType name="ArticulatedParameterType" nameNotes="" dataType="ParameterTypeEnum32" />
+                <NOM:fieldType name="ArticulatedParts" nameNotes="" dataType="ArticulatedPartsStruct" />
+                <NOM:fieldType name="AttachedParts" nameNotes="" dataType="AttachedPartsStruct" />
+            </NOM:complexType>
+            <NOM:complexType name="ArticulatedParameterStruct" nameNotes="">
+                <NOM:fieldType name="ArticulatedParameterChange" nameNotes="" dataType="octet" />
+                <NOM:fieldType name="Padding" nameNotes="" dataType="octet" />
+                <NOM:fieldType name="PartAttachedTo" nameNotes="" dataType="ushort" />
+                <NOM:fieldType name="ParameterValue" nameNotes="" dataType="ParameterValueStruct" />
+            </NOM:complexType>
+            <NOM:complexType name="MarkingStruct" nameNotes="">
+                <NOM:fieldType name="MarkingEncodingType" nameNotes="" dataType="MarkingEncodingEnum8" />
+                <NOM:fieldType name="MarkingData" nameNotes="" dataType="octet" />
+            </NOM:complexType>
+            <NOM:complexType name="RTIObjectIdStruct" nameNotes="">
+                <NOM:fieldType name="ID" nameNotes="" dataType="string" />
+            </NOM:complexType>
+            <NOM:complexType name="EventIdentifierStruct" nameNotes="">
+                <NOM:fieldType name="EventCount" nameNotes="" dataType="ushort" />
+                <NOM:fieldType name="IssuingObjectIdentifier" nameNotes="" dataType="RTIObjectIdStruct" />
+            </NOM:complexType>
+            <NOM:complexType name="RelativePositionStruct" nameNotes="">
+                <NOM:fieldType name="BodyXDistance" nameNotes="" dataType="float" />
+                <NOM:fieldType name="BodyYDistance" nameNotes="" dataType="float" />
+                <NOM:fieldType name="BodyZDistance" nameNotes="" dataType="float" />
+            </NOM:complexType>
+            <NOM:complexType name="ClockTimeStruct" nameNotes="">
+                <NOM:fieldType name="Hours" nameNotes="" dataType="int" />
+                <NOM:fieldType name="TimePastTheHour" nameNotes="" dataType="uint" />
+            </NOM:complexType>
+            <NOM:complexType name="Position" nameNotes="">
+                <NOM:fieldType name="x" nameNotes="" dataType="double" />
+                <NOM:fieldType name="y" nameNotes="" dataType="double" />
+                <NOM:fieldType name="z" nameNotes="" dataType="double" />
+            </NOM:complexType>
+        </NOM:complexTypes>
+    </NOM:dataTypes>
+    <NOM:notes></NOM:notes>
+</NOM:Nex1ObjectModel>

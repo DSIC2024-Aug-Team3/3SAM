@@ -1,0 +1,16 @@
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\bin\x86\Debug\ControlSimulator.exe.config
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\bin\x86\Debug\ControlSimulator.exe
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\bin\x86\Debug\ControlSimulator.pdb
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\bin\x86\Debug\NOM.dll
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\ControlSimulator.csprojAssemblyReference.cache
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\MainWindow.g.cs
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\App.g.cs
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\ControlSimulator_MarkupCompile.cache
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\ControlSimulator_MarkupCompile.lref
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\MainWindow.baml
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\ControlSimulator.g.resources
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\WpfApplication.Properties.Resources.resources
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\ControlSimulator.csproj.GenerateResource.cache
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\ControlSimulator.csproj.CopyComplete
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\ControlSimulator.exe
+D:\myProjects\Edu\2021\SW입문교육\미니프로젝트\Software\MiniProject\src\WpfApplication\obj\x86\Debug\ControlSimulator.pdb
