@@ -19,15 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RadarModel.cpp" />
+    <ClCompile Include="AirthreatModel.cpp" />
     <ClCompile Include="RSSModelManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RadarModel.h" />
+    <ClInclude Include="AirthreatModel.h" />
     <ClInclude Include="RSSModelManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\..\bin\RSSModelManager\RSS.xml" />
+    <Xml Include="RSS.xml" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

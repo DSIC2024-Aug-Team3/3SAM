@@ -15,23 +15,23 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RadarModel.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="RSSModelManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="AirthreatModel.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RadarModel.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="RSSModelManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="AirthreatModel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\..\bin\RSSModelManager\RSS.xml">
+    <Xml Include="RSS.xml">
       <Filter>리소스 파일</Filter>
     </Xml>
   </ItemGroup>
