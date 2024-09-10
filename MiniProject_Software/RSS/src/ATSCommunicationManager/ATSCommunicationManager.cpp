@@ -26,8 +26,9 @@ ATSCommunicationManager::init()
 	mec->setUser(this);
 
 	commConfig = new CommunicationConfig;
-	commConfig->setIni(_T("ATSCommLinkInfo.ini"));
+	commConfig->setIni(_T("CommLinkInfo.ini"));
 	commInterface = new NCommInterface(this);
+	tcout << _T("UDP Communication") << endl;
 }
 
 void
@@ -125,7 +126,7 @@ ATSCommunicationManager::start()
 	MessageProcessor msgProcessor = bind(&ATSCommunicationManager::processRecvMessage, this, placeholders::_1, placeholders::_2);
 	commConfig->setMsgProcessor(msgProcessor);
 	commInterface->initNetEnv(commConfig);
-	tcout << _T("ATS Communication connect") << endl;
+
 	return true;
 }
 
@@ -146,12 +147,13 @@ ATSCommunicationManager::setMEBComponent(IMEBComponent* realMEB)
 void
 ATSCommunicationManager::processRecvMessage(unsigned char* data, int size)
 {
-	auto IDSize = commConfig->getHeaderIDSize();
+	auto IDSize = commConfig->getHeaderSize();
 	auto IDPos = commConfig->getHeaderIDPos();
 
 	unsigned short tmpMsgID;
-	memcpy(&tmpMsgID, data + IDPos, IDSize);
+	memcpy(&tmpMsgID, data + IDPos, IDPos);
 	auto msgID = ntohs(tmpMsgID);
+
 	auto nomMsg = meb->getNOMInstance(name, commMsgHandler.getMsgName(msgID));
 
 	if (nomMsg.get())
