@@ -15,28 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CommMessageHandler.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ATSCommunicationManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="CommMessageHandler.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CommMessageHandler.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="ATSCommunicationManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="CommMessageHandler.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\..\bin\ATSCommunicationManager\ATSCommunicationManager.xml">
+    <Xml Include="ATSCommunicationManager.xml">
       <Filter>리소스 파일</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\bin\ATSCommunicationManager\ATSCommLinkInfo.ini">
+    <None Include="CommLinkInfo.ini">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
