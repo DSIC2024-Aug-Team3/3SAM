@@ -12,13 +12,67 @@
     <NOM:object name="ATS" id="222" sharing="Publish" orderType="Receive" alignment="false">
       <NOM:attribute name="ID" dataType="UnsignedIntegerBE" />
     </NOM:object>
-	  
   </NOM:objects>
   <!-- interaction data -->
   <NOM:interactions>
-    <NOM:interaction name="Simulation_Start" id="1001" nameNotes="시작" sharing="Subscribe" orderType="Receive" alignment="false">
-      <NOM:parameter name="Message1" dataType="UnsignedIntegerBE" />
-    </NOM:interaction>
+	<NOM:interaction name="deployMsg" id="1" nameNotes="시나리오배포(OC to ALL)" sharing="Publish" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	  <NOM:parameter name="AntiInitInfo" dataType="AntiInitInfoStruct" />
+	  <NOM:parameter name="LauncherInitInfo" dataType="LauncherInitInfoStruct" />
+	  <NOM:parameter name="RadarInitInfo" dataType="RadarInitInfoStruct" />
+	</NOM:interaction>
+	<NOM:interaction name="deployChkMsg" id="2" nameNotes="시나리오배포확인(ALL to OC)" sharing="Subscribe" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+      <NOM:parameter name="SrcId" dataType="UnsignedIntegerBE" />
+	</NOM:interaction>
+	<NOM:interaction name="startMsg" id="3" nameNotes="시나리오시작(OC to ALL)" sharing="Publish" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	</NOM:interaction>
+    <NOM:interaction name="startChkMsg" id="4" nameNotes="시나리오시작확인(ALL to OC)" sharing="Subscribe" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	  <NOM:parameter name="SrcId" dataType="UnsignedIntegerBE" />
+	</NOM:interaction>
+	<NOM:interaction name="R_ATSPositionMsg" id="5" nameNotes="공중위협좌표(ATS to RSS+OC)" sharing="Subscribe" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	  <NOM:parameter name="AntiInfo" dataType="AntiInfoStruct" />
+	</NOM:interaction>
+	<NOM:interaction name="O_ATSPositionMsg" id="6" nameNotes="공중위협좌표(ATS to OC)" sharing="Neither" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	  <NOM:parameter name="AntiInfo" dataType="AntiInfoStruct" />
+	</NOM:interaction>
+	  <NOM:interaction name="launchingMsg" id="7" nameNotes="발사명령(OC to MLS)" sharing="Neither" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	</NOM:interaction>
+	<NOM:interaction name="fireMsg" id="8" nameNotes="발사명령(MLS to MSS)" sharing="Neither" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	</NOM:interaction>
+	<NOM:interaction name="R_missileInfoMsg" id="9" nameNotes="유도탄좌표(MSS to RSS)" sharing="Neither" orderType="Receive" alignment="false">
+      <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	  <NOM:parameter name="MissileInfo" dataType="MissileInfoStruct" />
+	</NOM:interaction>
+	<NOM:interaction name="MSSPositionMsg" id="10" nameNotes="유도탄좌표(MSS to OC)" sharing="Neither" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	  <NOM:parameter name="MissileInfo" dataType="MissileInfoStruct" />
+	</NOM:interaction>
+	<NOM:interaction name="interceptResMsg" id="11" nameNotes="요격결과(OC to ATS+MSS)" sharing="Publish" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	  <NOM:parameter name="interceptRes" dataType="UnsignedIntegerBE" />
+	</NOM:interaction>
+	<NOM:interaction name="stopMsg" id="12" nameNotes="시나리오중지(OC to ALL)" sharing="Publish" orderType="Receive" alignment="false">
+      <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	</NOM:interaction>
+	<NOM:interaction name="stopChkMsg" id="13" nameNotes="시나리오중지확인(ALL to OC)" sharing="Subscribe" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	  <NOM:parameter name="SrcId" dataType="UnsignedIntegerBE" />
+	</NOM:interaction>
+	  <NOM:interaction name="detectMsg" id="14" nameNotes="레이다탐지확인(RSS to OC)" sharing="Neither" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	  <NOM:parameter name="SrcId" dataType="UnsignedIntegerBE" />
+	</NOM:interaction>
+	<NOM:interaction name="stockMsg" id="15" nameNotes="유도탄재고정보(MLS to OC)" sharing="Neither" orderType="Receive" alignment="false">
+	  <NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+	  <NOM:parameter name="SrcId" dataType="UnsignedIntegerBE" />
+	</NOM:interaction>
   </NOM:interactions>
   <!-- data types -->
   <NOM:dataTypes>
@@ -54,7 +108,35 @@
         <NOM:fieldType name="X" dataType="FloatBE" />
         <NOM:fieldType name="Y" dataType="FloatBE" />
         <NOM:fieldType name="Z" dataType="FloatBE" />
-      </NOM:complexType>
+	</NOM:complexType>
+	  <NOM:complexType name="MessageHeaderStruct">
+		<NOM:fieldType name="ID" dataType="UnsignedShortBE" />
+	    <NOM:fieldType name="SIZE" dataType="UnsignedShortBE" />
+	</NOM:complexType>
+	  <NOM:complexType name="AntiInitInfoStruct">
+	    <NOM:fieldType name="AntiInitLat" dataType="DoubleBE" />
+		<NOM:fieldType name="AntiInitLon" dataType="DoubleBE" />
+		<NOM:fieldType name="AntiDestLat" dataType="DoubleBE" />
+		<NOM:fieldType name="AntiDestLon" dataType="DoubleBE" />
+		<NOM:fieldType name="AntiVelocity" dataType="DoubleBE" />
+		<NOM:fieldType name="AntiType" dataType="UnsignedIntegerBE" />
+	</NOM:complexType>
+	  <NOM:complexType name="LauncherInitInfoStruct">
+		<NOM:fieldType name="LauncherLat" dataType="DoubleBE" />
+		<NOM:fieldType name="LauncherLon" dataType="DoubleBE" />
+	</NOM:complexType>
+	  <NOM:complexType name="RadarInitInfoStruct">
+		<NOM:fieldType name="RadarLat" dataType="DoubleBE" />
+		<NOM:fieldType name="RadarLon" dataType="DoubleBE" />
+	</NOM:complexType>
+	  <NOM:complexType name="AntiInfoStruct">
+		<NOM:fieldType name="AntiLat" dataType="DoubleBE" />
+		<NOM:fieldType name="AntiLon" dataType="DoubleBE" />
+	</NOM:complexType>
+	  <NOM:complexType name="MissileInfoStruct">
+		<NOM:fieldType name="MissileLat" dataType="DoubleBE" />
+		<NOM:fieldType name="MissileLon" dataType="DoubleBE" />
+	  </NOM:complexType>
     </NOM:complexTypes>
   </NOM:dataTypes>
   <NOM:notes>
