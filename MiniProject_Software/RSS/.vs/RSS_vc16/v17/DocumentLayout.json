@@ -1,0 +1,444 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1963AA-33DA-4FD7-A82D-DF2B751300D4}|src\\MSSCommunicationManager\\MSSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MSSCommunicationManager\\MSSCommunicationManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC1963AA-33DA-4FD7-A82D-DF2B751300D4}|src\\MSSCommunicationManager\\MSSCommunicationManager.vcxproj|solutionrelative:src\\MSSCommunicationManager\\MSSCommunicationManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7232F4A5-9513-49BB-BB51-F26C652EFE0E}|src\\MLSCommunicationManager\\MLSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MLSCommunicationManager\\MLSCommunicationManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7232F4A5-9513-49BB-BB51-F26C652EFE0E}|src\\MLSCommunicationManager\\MLSCommunicationManager.vcxproj|solutionrelative:src\\MLSCommunicationManager\\MLSCommunicationManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17AA90BE-CB67-42F5-92AC-AB79B0DCA08B}|src\\RSSMain\\TDSMain.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSMain\\RSSMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{17AA90BE-CB67-42F5-92AC-AB79B0DCA08B}|src\\RSSMain\\TDSMain.vcxproj|solutionrelative:src\\RSSMain\\RSSMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0397AE5-864E-401F-93CE-1075DCD4A9F7}|src\\OCCommunicationManager\\OCCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\OCCommunicationManager\\OCCommunicationManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D0397AE5-864E-401F-93CE-1075DCD4A9F7}|src\\OCCommunicationManager\\OCCommunicationManager.vcxproj|solutionrelative:src\\OCCommunicationManager\\OCCommunicationManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1422E280-64A5-4E3D-915A-762DDB5233AD}|src\\RSSModelManager\\RSSModelManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RSSModelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1422E280-64A5-4E3D-915A-762DDB5233AD}|src\\RSSModelManager\\RSSModelManager.vcxproj|solutionrelative:src\\RSSModelManager\\RSSModelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1422E280-64A5-4E3D-915A-762DDB5233AD}|src\\RSSModelManager\\RSSModelManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RadarModel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1422E280-64A5-4E3D-915A-762DDB5233AD}|src\\RSSModelManager\\RSSModelManager.vcxproj|solutionrelative:src\\RSSModelManager\\RadarModel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0397AE5-864E-401F-93CE-1075DCD4A9F7}|src\\OCCommunicationManager\\OCCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\OCCommunicationManager\\OCCommunicationManager.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D0397AE5-864E-401F-93CE-1075DCD4A9F7}|src\\OCCommunicationManager\\OCCommunicationManager.vcxproj|solutionrelative:bin\\OCCommunicationManager\\OCCommunicationManager.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1422E280-64A5-4E3D-915A-762DDB5233AD}|src\\RSSModelManager\\RSSModelManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\RSSModelManager\\RSS.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1422E280-64A5-4E3D-915A-762DDB5233AD}|src\\RSSModelManager\\RSSModelManager.vcxproj|solutionrelative:bin\\RSSModelManager\\RSS.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1963AA-33DA-4FD7-A82D-DF2B751300D4}|src\\MSSCommunicationManager\\MSSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MSSCommunicationManager\\MSSCommunicationManager.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BC1963AA-33DA-4FD7-A82D-DF2B751300D4}|src\\MSSCommunicationManager\\MSSCommunicationManager.vcxproj|solutionrelative:bin\\MSSCommunicationManager\\MSSCommunicationManager.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1422E280-64A5-4E3D-915A-762DDB5233AD}|src\\RSSModelManager\\RSSModelManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RSSModelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1422E280-64A5-4E3D-915A-762DDB5233AD}|src\\RSSModelManager\\RSSModelManager.vcxproj|solutionrelative:src\\RSSModelManager\\RSSModelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7232F4A5-9513-49BB-BB51-F26C652EFE0E}|src\\MLSCommunicationManager\\MLSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MLSCommunicationManager\\MLSCommunicationManager.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7232F4A5-9513-49BB-BB51-F26C652EFE0E}|src\\MLSCommunicationManager\\MLSCommunicationManager.vcxproj|solutionrelative:bin\\MLSCommunicationManager\\MLSCommunicationManager.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1422E280-64A5-4E3D-915A-762DDB5233AD}|src\\RSSModelManager\\RSSModelManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RadarModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1422E280-64A5-4E3D-915A-762DDB5233AD}|src\\RSSModelManager\\RSSModelManager.vcxproj|solutionrelative:src\\RSSModelManager\\RadarModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17AA90BE-CB67-42F5-92AC-AB79B0DCA08B}|src\\RSSMain\\TDSMain.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\PlugInList.ini||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{17AA90BE-CB67-42F5-92AC-AB79B0DCA08B}|src\\RSSMain\\TDSMain.vcxproj|solutionrelative:bin\\PlugInList.ini||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Nex1\\nFrameworkv1.7\\include\\asio\\asio\\detail\\cstdint.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7232F4A5-9513-49BB-BB51-F26C652EFE0E}|src\\MLSCommunicationManager\\MLSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MLSCommunicationManager\\MLSCommLinkInfo.ini||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{7232F4A5-9513-49BB-BB51-F26C652EFE0E}|src\\MLSCommunicationManager\\MLSCommunicationManager.vcxproj|solutionrelative:bin\\MLSCommunicationManager\\MLSCommLinkInfo.ini||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1963AA-33DA-4FD7-A82D-DF2B751300D4}|src\\MSSCommunicationManager\\MSSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MSSCommunicationManager\\MSSCommLinkInfo.ini||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{BC1963AA-33DA-4FD7-A82D-DF2B751300D4}|src\\MSSCommunicationManager\\MSSCommunicationManager.vcxproj|solutionrelative:bin\\MSSCommunicationManager\\MSSCommLinkInfo.ini||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7232F4A5-9513-49BB-BB51-F26C652EFE0E}|src\\MLSCommunicationManager\\MLSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MLSCommunicationManager\\CommMessageHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7232F4A5-9513-49BB-BB51-F26C652EFE0E}|src\\MLSCommunicationManager\\MLSCommunicationManager.vcxproj|solutionrelative:src\\MLSCommunicationManager\\CommMessageHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBEEE51-E585-42BB-8D6A-769B93A43BCB}|src\\ATSCommunicationManager\\ATSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\ATSCommunicationManager\\CommMessageHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2BBEEE51-E585-42BB-8D6A-769B93A43BCB}|src\\ATSCommunicationManager\\ATSCommunicationManager.vcxproj|solutionrelative:src\\ATSCommunicationManager\\CommMessageHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1963AA-33DA-4FD7-A82D-DF2B751300D4}|src\\MSSCommunicationManager\\MSSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MSSCommunicationManager\\CommMessageHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC1963AA-33DA-4FD7-A82D-DF2B751300D4}|src\\MSSCommunicationManager\\MSSCommunicationManager.vcxproj|solutionrelative:src\\MSSCommunicationManager\\CommMessageHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0397AE5-864E-401F-93CE-1075DCD4A9F7}|src\\OCCommunicationManager\\OCCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\OCCommunicationManager\\CommMessageHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D0397AE5-864E-401F-93CE-1075DCD4A9F7}|src\\OCCommunicationManager\\OCCommunicationManager.vcxproj|solutionrelative:src\\OCCommunicationManager\\CommMessageHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7232F4A5-9513-49BB-BB51-F26C652EFE0E}|src\\MLSCommunicationManager\\MLSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MLSCommunicationManager\\MLSCommunicationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7232F4A5-9513-49BB-BB51-F26C652EFE0E}|src\\MLSCommunicationManager\\MLSCommunicationManager.vcxproj|solutionrelative:src\\MLSCommunicationManager\\MLSCommunicationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0397AE5-864E-401F-93CE-1075DCD4A9F7}|src\\OCCommunicationManager\\OCCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\OCCommunicationManager\\OCCommunicationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D0397AE5-864E-401F-93CE-1075DCD4A9F7}|src\\OCCommunicationManager\\OCCommunicationManager.vcxproj|solutionrelative:src\\OCCommunicationManager\\OCCommunicationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBEEE51-E585-42BB-8D6A-769B93A43BCB}|src\\ATSCommunicationManager\\ATSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\ATSCommunicationManager\\ATSCommunicationManager.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2BBEEE51-E585-42BB-8D6A-769B93A43BCB}|src\\ATSCommunicationManager\\ATSCommunicationManager.vcxproj|solutionrelative:bin\\ATSCommunicationManager\\ATSCommunicationManager.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1963AA-33DA-4FD7-A82D-DF2B751300D4}|src\\MSSCommunicationManager\\MSSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MSSCommunicationManager\\MSSCommunicationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC1963AA-33DA-4FD7-A82D-DF2B751300D4}|src\\MSSCommunicationManager\\MSSCommunicationManager.vcxproj|solutionrelative:src\\MSSCommunicationManager\\MSSCommunicationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBEEE51-E585-42BB-8D6A-769B93A43BCB}|src\\ATSCommunicationManager\\ATSCommunicationManager.vcxproj|C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\ATSCommunicationManager\\ATSCommunicationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2BBEEE51-E585-42BB-8D6A-769B93A43BCB}|src\\ATSCommunicationManager\\ATSCommunicationManager.vcxproj|solutionrelative:src\\ATSCommunicationManager\\ATSCommunicationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MSSCommunicationManager.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MSSCommunicationManager\\MSSCommunicationManager.cpp",
+              "RelativeDocumentMoniker": "src\\MSSCommunicationManager\\MSSCommunicationManager.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MSSCommunicationManager\\MSSCommunicationManager.cpp",
+              "RelativeToolTip": "src\\MSSCommunicationManager\\MSSCommunicationManager.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T03:54:18.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MLSCommunicationManager.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MLSCommunicationManager\\MLSCommunicationManager.cpp",
+              "RelativeDocumentMoniker": "src\\MLSCommunicationManager\\MLSCommunicationManager.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MLSCommunicationManager\\MLSCommunicationManager.cpp",
+              "RelativeToolTip": "src\\MLSCommunicationManager\\MLSCommunicationManager.cpp",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAqwH4AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T11:36:24.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RSSMain.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSMain\\RSSMain.cpp",
+              "RelativeDocumentMoniker": "src\\RSSMain\\RSSMain.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSMain\\RSSMain.cpp",
+              "RelativeToolTip": "src\\RSSMain\\RSSMain.cpp",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAFgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T11:25:52.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OCCommunicationManager.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\OCCommunicationManager\\OCCommunicationManager.cpp",
+              "RelativeDocumentMoniker": "src\\OCCommunicationManager\\OCCommunicationManager.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\OCCommunicationManager\\OCCommunicationManager.cpp",
+              "RelativeToolTip": "src\\OCCommunicationManager\\OCCommunicationManager.cpp",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAqwHYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T03:54:31.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RSSModelManager.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RSSModelManager.cpp",
+              "RelativeDocumentMoniker": "src\\RSSModelManager\\RSSModelManager.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RSSModelManager.cpp",
+              "RelativeToolTip": "src\\RSSModelManager\\RSSModelManager.cpp",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAqwFkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T03:48:12.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RadarModel.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RadarModel.cpp",
+              "RelativeDocumentMoniker": "src\\RSSModelManager\\RadarModel.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RadarModel.cpp",
+              "RelativeToolTip": "src\\RSSModelManager\\RadarModel.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T03:54:43.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OCCommunicationManager.xml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\OCCommunicationManager\\OCCommunicationManager.xml",
+              "RelativeDocumentMoniker": "bin\\OCCommunicationManager\\OCCommunicationManager.xml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\OCCommunicationManager\\OCCommunicationManager.xml",
+              "RelativeToolTip": "bin\\OCCommunicationManager\\OCCommunicationManager.xml",
+              "ViewState": "AQIAABsAAAAAAAAAAADwvysAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-04-25T14:09:11.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RSS.xml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\RSSModelManager\\RSS.xml",
+              "RelativeDocumentMoniker": "bin\\RSSModelManager\\RSS.xml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\RSSModelManager\\RSS.xml",
+              "RelativeToolTip": "bin\\RSSModelManager\\RSS.xml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAhwC8AAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-04-25T03:48:43.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MSSCommunicationManager.xml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MSSCommunicationManager\\MSSCommunicationManager.xml",
+              "RelativeDocumentMoniker": "bin\\MSSCommunicationManager\\MSSCommunicationManager.xml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MSSCommunicationManager\\MSSCommunicationManager.xml",
+              "RelativeToolTip": "bin\\MSSCommunicationManager\\MSSCommunicationManager.xml",
+              "ViewState": "AQIAABkAAAAAAAAAAABAwC8AAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-04-25T11:25:25.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RSSModelManager.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RSSModelManager.h",
+              "RelativeDocumentMoniker": "src\\RSSModelManager\\RSSModelManager.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RSSModelManager.h",
+              "RelativeToolTip": "src\\RSSModelManager\\RSSModelManager.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-25T04:44:12.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MLSCommunicationManager.xml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MLSCommunicationManager\\MLSCommunicationManager.xml",
+              "RelativeDocumentMoniker": "bin\\MLSCommunicationManager\\MLSCommunicationManager.xml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MLSCommunicationManager\\MLSCommunicationManager.xml",
+              "RelativeToolTip": "bin\\MLSCommunicationManager\\MLSCommunicationManager.xml",
+              "ViewState": "AQIAAAcAAAAAAAAAAABAwDAAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-04-25T11:37:04.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RadarModel.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RadarModel.h",
+              "RelativeDocumentMoniker": "src\\RSSModelManager\\RadarModel.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\RSSModelManager\\RadarModel.h",
+              "RelativeToolTip": "src\\RSSModelManager\\RadarModel.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-25T12:24:02.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PlugInList.ini",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\PlugInList.ini",
+              "RelativeDocumentMoniker": "bin\\PlugInList.ini",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\PlugInList.ini",
+              "RelativeToolTip": "bin\\PlugInList.ini",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002768|",
+              "WhenOpened": "2024-04-25T14:47:03.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "cstdint.hpp",
+              "DocumentMoniker": "C:\\Nex1\\nFrameworkv1.7\\include\\asio\\asio\\detail\\cstdint.hpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Nex1\\nFrameworkv1.7\\include\\asio\\asio\\detail\\cstdint.hpp",
+              "ToolTip": "C:\\Nex1\\nFrameworkv1.7\\include\\asio\\asio\\detail\\cstdint.hpp",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Nex1\\nFrameworkv1.7\\include\\asio\\asio\\detail\\cstdint.hpp",
+              "ViewState": "AQIAAAgAAAAAAAAAAADgvxYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-25T14:46:01.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MLSCommLinkInfo.ini",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MLSCommunicationManager\\MLSCommLinkInfo.ini",
+              "RelativeDocumentMoniker": "bin\\MLSCommunicationManager\\MLSCommLinkInfo.ini",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MLSCommunicationManager\\MLSCommLinkInfo.ini",
+              "RelativeToolTip": "bin\\MLSCommunicationManager\\MLSCommLinkInfo.ini",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002768|",
+              "WhenOpened": "2024-04-25T11:39:09.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MSSCommLinkInfo.ini",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MSSCommunicationManager\\MSSCommLinkInfo.ini",
+              "RelativeDocumentMoniker": "bin\\MSSCommunicationManager\\MSSCommLinkInfo.ini",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\MSSCommunicationManager\\MSSCommLinkInfo.ini",
+              "RelativeToolTip": "bin\\MSSCommunicationManager\\MSSCommLinkInfo.ini",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002768|",
+              "WhenOpened": "2024-04-25T12:28:55.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CommMessageHandler.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MLSCommunicationManager\\CommMessageHandler.cpp",
+              "RelativeDocumentMoniker": "src\\MLSCommunicationManager\\CommMessageHandler.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MLSCommunicationManager\\CommMessageHandler.cpp",
+              "RelativeToolTip": "src\\MLSCommunicationManager\\CommMessageHandler.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwvxsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T11:38:18.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CommMessageHandler.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MSSCommunicationManager\\CommMessageHandler.cpp",
+              "RelativeDocumentMoniker": "src\\MSSCommunicationManager\\CommMessageHandler.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MSSCommunicationManager\\CommMessageHandler.cpp",
+              "RelativeToolTip": "src\\MSSCommunicationManager\\CommMessageHandler.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T11:38:51.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CommMessageHandler.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\ATSCommunicationManager\\CommMessageHandler.cpp",
+              "RelativeDocumentMoniker": "src\\ATSCommunicationManager\\CommMessageHandler.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\ATSCommunicationManager\\CommMessageHandler.cpp",
+              "RelativeToolTip": "src\\ATSCommunicationManager\\CommMessageHandler.cpp",
+              "ViewState": "AQIAABEAAAAAAAAAAAAUwBcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T10:33:22.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MLSCommunicationManager.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MLSCommunicationManager\\MLSCommunicationManager.h",
+              "RelativeDocumentMoniker": "src\\MLSCommunicationManager\\MLSCommunicationManager.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MLSCommunicationManager\\MLSCommunicationManager.h",
+              "RelativeToolTip": "src\\MLSCommunicationManager\\MLSCommunicationManager.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-25T11:36:21.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CommMessageHandler.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\OCCommunicationManager\\CommMessageHandler.cpp",
+              "RelativeDocumentMoniker": "src\\OCCommunicationManager\\CommMessageHandler.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\OCCommunicationManager\\CommMessageHandler.cpp",
+              "RelativeToolTip": "src\\OCCommunicationManager\\CommMessageHandler.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwvxkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T10:33:48.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OCCommunicationManager.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\OCCommunicationManager\\OCCommunicationManager.h",
+              "RelativeDocumentMoniker": "src\\OCCommunicationManager\\OCCommunicationManager.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\OCCommunicationManager\\OCCommunicationManager.h",
+              "RelativeToolTip": "src\\OCCommunicationManager\\OCCommunicationManager.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-25T03:54:36.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ATSCommunicationManager.xml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\ATSCommunicationManager\\ATSCommunicationManager.xml",
+              "RelativeDocumentMoniker": "bin\\ATSCommunicationManager\\ATSCommunicationManager.xml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\bin\\ATSCommunicationManager\\ATSCommunicationManager.xml",
+              "RelativeToolTip": "bin\\ATSCommunicationManager\\ATSCommunicationManager.xml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAhwB0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-04-25T04:33:12.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MSSCommunicationManager.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MSSCommunicationManager\\MSSCommunicationManager.h",
+              "RelativeDocumentMoniker": "src\\MSSCommunicationManager\\MSSCommunicationManager.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\MSSCommunicationManager\\MSSCommunicationManager.h",
+              "RelativeToolTip": "src\\MSSCommunicationManager\\MSSCommunicationManager.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAEwA0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-25T03:54:21.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ATSCommunicationManager.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\ATSCommunicationManager\\ATSCommunicationManager.h",
+              "RelativeDocumentMoniker": "src\\ATSCommunicationManager\\ATSCommunicationManager.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\superSAMS\\MiniProject_Software\\RSS\\src\\ATSCommunicationManager\\ATSCommunicationManager.h",
+              "RelativeToolTip": "src\\ATSCommunicationManager\\ATSCommunicationManager.h",
+              "ViewState": "AQIAABoAAAAAAAAAAAAEwCgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-25T03:54:14.254Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

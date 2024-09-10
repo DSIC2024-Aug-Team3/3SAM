@@ -1,0 +1,7 @@
+﻿  CommMessageHandler.cpp
+  TCCCommunicationManager.cpp
+  코드를 생성하고 있습니다...
+C:\Users\User\Documents\GitHub\3SAM\MiniProject_Software\MSS\src\UDPCommunicationManager\CommMessageHandler.h(3,10): error C1083: 포함 파일을 열 수 없습니다. 'nFramework/util/util.h': No such file or directory
+  (소스 파일 '../src/UDPCommunicationManager/CommMessageHandler.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\3SAM\MiniProject_Software\MSS\src\UDPCommunicationManager\TCCCommunicationManager.cpp(1,10): error C1083: 포함 파일을 열 수 없습니다. 'OCCommunicationManager.h': No such file or directory
