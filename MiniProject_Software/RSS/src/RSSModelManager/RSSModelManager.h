@@ -1,8 +1,8 @@
 #pragma once
-#include <nFramework/BaseManager.h>
 #include <nFramework/mec/MECComponent.h>
 #include <nFramework/nom/NOMMain.h>
-#include "AirthreatModel.h"
+#include <nFramework/BaseManager.h>
+#include "RSSModel.h"
 
 using namespace nframework;
 using namespace nom;
@@ -33,8 +33,11 @@ public:
 private:
 	void init();
 	void release();
-
-	void processStartMsg(shared_ptr<NOM>);
+	void StartMsg(shared_ptr<NOM>);
+	void DeployMsg(shared_ptr<NOM>);
+	void StopMsg(shared_ptr<NOM>);
+	void GetAirThreatLocation(shared_ptr<NOM>);
+	void GetMissileLocation(shared_ptr<NOM>);
 
 private:
 	IMEBComponent* meb;
@@ -43,8 +46,10 @@ private:
 	map<unsigned int, shared_ptr<NOM>> registeredMsg;
 	map<unsigned int, shared_ptr<NOM>> discoveredMsg;
 	map<tstring, function<void(shared_ptr<NOM>)>> msgMethodMap;
-
+	double antiLat, antiLon, missileLat, missileLon;
+	double radarLat, radarLon; //* 레이다 위치
 	// Air Threat Model
-	AirthreatModel* airThreat;
+	RadarModel* Radar;
+	shared_ptr<NOM> message;
+	bool firecommand;
 };
-

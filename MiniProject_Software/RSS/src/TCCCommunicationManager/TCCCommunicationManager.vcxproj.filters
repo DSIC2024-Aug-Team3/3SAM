@@ -31,12 +31,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="TCCCommunicationManager.xml">
+    <Xml Include="..\..\bin\TCCCommunicationManager\TCCCommunicationManager.xml">
       <Filter>리소스 파일</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CommLinkInfo.ini">
+    <None Include="..\..\bin\TCCCommunicationManager\CommLinkInfo.ini">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>

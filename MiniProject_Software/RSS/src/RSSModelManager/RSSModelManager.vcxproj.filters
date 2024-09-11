@@ -18,7 +18,7 @@
     <ClCompile Include="RSSModelManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="AirthreatModel.cpp">
+    <ClCompile Include="RSSModel.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,12 +26,12 @@
     <ClInclude Include="RSSModelManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="AirthreatModel.h">
+    <ClInclude Include="RSSModel.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="RSS.xml">
+    <Xml Include="..\..\bin\RSSModelManager\RSS.xml">
       <Filter>리소스 파일</Filter>
     </Xml>
   </ItemGroup>
