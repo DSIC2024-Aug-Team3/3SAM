@@ -26,9 +26,9 @@ RSSCommunicationManager::init()
 	mec->setUser(this);
 
 	commConfig = new CommunicationConfig;
-	commConfig->setIni(_T("CommLinkInfo.ini"));
+	commConfig->setIni(_T("RSSCommLinkInfo.ini"));
 	commInterface = new NCommInterface(this);
-	tcout << _T("UDP Communication") << endl;
+	tcout << _T("RSS UDP Communication") << endl;
 }
 
 void

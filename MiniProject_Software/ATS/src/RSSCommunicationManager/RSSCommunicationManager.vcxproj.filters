@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RSSCommunicationManager.cpp">
+    <ClCompile Include="CommMessageHandler.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CommMessageHandler.cpp">
+    <ClCompile Include="RSSCommunicationManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -31,12 +31,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CommLinkInfo.ini">
+    <None Include="..\..\bin\RSSCommunicationManager\RSSCommLinkInfo.ini">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="RSSCommunicationManager.xml">
+    <Xml Include="..\..\bin\RSSCommunicationManager\RSSCommunicationManager.xml">
       <Filter>리소스 파일</Filter>
     </Xml>
   </ItemGroup>

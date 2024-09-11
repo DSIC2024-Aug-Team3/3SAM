@@ -27,10 +27,10 @@
     <ClInclude Include="RSSCommunicationManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CommLinkInfo.ini" />
+    <None Include="..\..\bin\RSSCommunicationManager\RSSCommLinkInfo.ini" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="RSSCommunicationManager.xml" />
+    <Xml Include="..\..\bin\RSSCommunicationManager\RSSCommunicationManager.xml" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
