@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<NOM:Nex1ObjectModel xmlns:NOM="lignex1.sw.nframework.NOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="lignex1.sw.nframework.NOM NOM.xsd" version="0.1" name="MLS" date="2021-02-09" author="Junyong Shim, LIGNex1">
+	<!-- object data -->
+	<NOM:objects>
+		<NOM:object name="ICD_Test1" id="111" nameNotes="ICD의 Test1 메시지" sharing="Subscribe" orderType="Receive" alignment="false">
+			<NOM:attribute name="SystemTime1" nameNotes="Logging Time - sec"  dataType="UnsignedIntegerBE"/>
+			<NOM:attribute name="SystemTime2" nameNotes="Logging Time - millisec"  dataType="UnsignedIntegerBE"/>
+			<NOM:attribute name="Message1" nameNotes="수신 메시지 1" dataType="UnsignedIntegerBE"/>
+			<NOM:attribute name="Message2" nameNotes="수신 메시지 2" dataType="UnsignedIntegerBE"/>
+		</NOM:object>
+		<NOM:object name="ATS" id="222" sharing="Subscribe" orderType="Receive" alignment="false">
+			<NOM:attribute name="ID" dataType="UnsignedIntegerBE" />
+		</NOM:object>
+	</NOM:objects>
+	<!-- interaction data -->
+	<NOM:interactions>
+		<NOM:interaction name="deployMsg" id="1" nameNotes="시나리오배포(OC to ALL)" sharing="Subscribe" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="AntiInitInfo" dataType="AntiInitInfoStruct" />
+			<NOM:parameter name="LauncherInitInfo" dataType="LauncherInitInfoStruct" />
+			<NOM:parameter name="RadarInitInfo" dataType="RadarInitInfoStruct" />
+		</NOM:interaction>
+		<NOM:interaction name="deployChkMsg" id="2" nameNotes="시나리오배포확인(ALL to OC)" sharing="Publish" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="SrcId" dataType="UnsignedIntegerBE" />
+		</NOM:interaction>
+		<NOM:interaction name="startMsg" id="3" nameNotes="시나리오시작(OC to ALL)" sharing="Subscribe" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+		</NOM:interaction>
+		<NOM:interaction name="startChkMsg" id="4" nameNotes="시나리오시작확인(ALL to OC)" sharing="Publish" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="SrcId" dataType="UnsignedIntegerBE" />
+		</NOM:interaction>
+		<NOM:interaction name="R_antiInfoMsg" id="5" nameNotes="공중위협좌표(ATS to RSS)" sharing="Neither" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="AntiInfo" dataType="AntiInfoStruct" />
+		</NOM:interaction>
+		<NOM:interaction name="O_antiInfoMsg" id="6" nameNotes="공중위협좌표(RSS to OC+MSS)" sharing="Neither" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="AntiInfo" dataType="AntiInfoStruct" />
+		</NOM:interaction>
+		<NOM:interaction name="launchingMsg" id="7" nameNotes="발사명령(OC to MLS)" sharing="Subscribe" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+		</NOM:interaction>
+		<NOM:interaction name="fireMsg" id="8" nameNotes="이탈명령(MLS to MSS)" sharing="Publish" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+		</NOM:interaction>
+		<NOM:interaction name="R_missileInfoMsg" id="9" nameNotes="유도탄좌표(MSS to RSS)" sharing="Neither" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="MissileInfo" dataType="MissileInfoStruct" />
+		</NOM:interaction>
+		<NOM:interaction name="O_missileInfoMsg" id="10" nameNotes="유도탄좌표(RSS to OC)" sharing="Neither" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="MissileInfo" dataType="MissileInfoStruct" />
+		</NOM:interaction>
+		<NOM:interaction name="interceptResMsg" id="11" nameNotes="요격결과(OC to ATS+MSS)" sharing="Neither" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="interceptRes" dataType="UnsignedIntegerBE" />
+		</NOM:interaction>
+		<NOM:interaction name="stopMsg" id="12" nameNotes="시나리오중지(OC to ALL)" sharing="Subscribe" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+		</NOM:interaction>
+		<NOM:interaction name="stopChkMsg" id="13" nameNotes="시나리오중지확인(ALL to OC)" sharing="Publish" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="SrcId" dataType="UnsignedIntegerBE" />
+		</NOM:interaction>
+		<NOM:interaction name="detectMsg" id="14" nameNotes="레이다탐지확인(RSS to OC)" sharing="Neither" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="SrcId" dataType="UnsignedIntegerBE" />
+		</NOM:interaction>
+		<NOM:interaction name="stockMsg" id="15" nameNotes="유도탄재고정보(MLS to OC)" sharing="Neither" orderType="Receive" alignment="false">
+			<NOM:parameter name="MessageHeader" dataType="MessageHeaderStruct" />
+			<NOM:parameter name="SrcId" dataType="UnsignedIntegerBE" />
+		</NOM:interaction>
+	</NOM:interactions>
+	<!-- data types -->
+	<NOM:dataTypes>
+		<NOM:basicTypes>
+			<NOM:basicType name="Boolean" length="1" endian="little" type="Bool" note="8bit value"/>
+			<NOM:basicType name="IntegerBE" length="4" endian="big" type="Integer" note="32bit integer, big endian"/>
+			<NOM:basicType name="Integer" length="4" endian="little" type="Integer" note="32bit integer, little endian"/>
+			<NOM:basicType name="UnsignedIntegerBE" length="4" endian="big" signed="false" type="Integer" note="32bit unsigned integer, big endian"/>
+			<NOM:basicType name="UnsignedInteger" length="4" endian="little" signed="false" type="Integer" note="32bit unsigned integer, little endian"/>
+			<NOM:basicType name="Octet" length="1" endian="little" type="Byte" note="8bit value"/>
+			<NOM:basicType name="ShortBE" length="2" endian="big" type="Short" note="16bit integer(short), big endian"/>
+			<NOM:basicType name="Short" length="2" endian="little" type="Short" note="16bit integer(short), little endian"/>
+			<NOM:basicType name="UnsignedShortBE" length="2" endian="big" signed="false" type="Short" note="16bit unsigned integer(short), big endian"/>
+			<NOM:basicType name="UnsignedShort" length="2" endian="little" signed="false" type="Short" note="16bit unsigned integer(short), little endian"/>
+			<NOM:basicType name="FloatBE" length="4" endian="big" type="Float" note="32bit float, big endian"/>
+			<NOM:basicType name="Float" length="4" endian="little" type="Float" note="32bit float, little endian"/>
+			<NOM:basicType name="DoubleBE" length="8" endian="big" type="Double" note="32bit double, little endian"/>
+			<NOM:basicType name="Double" length="8" endian="little" type="Double" note="32bit double, little endian"/>
+			<NOM:basicType name="Char" length="1" endian="none" type="Char" note="8bit char value"/>
+			<NOM:basicType name="UnsignedChar" length="1" endian="none" signed="false" type="Char" note="8bit char value"/>
+			<NOM:basicType name="Byte" length="1" endian="none" signed="false" type="Byte" note="8bit byte value"/>
+			<NOM:basicType name="String" length="0" endian="none" signed="false" type="String" note="String"/>
+			<NOM:basicType name="Var" length="0" endian="none" signed="false" type="Variable" note="Variable"/>
+		</NOM:basicTypes>
+		<NOM:enumerationTypes>
+			<NOM:enumerationType name="TestEnum16" length="2">
+				<NOM:enumerator name="Start" value="1" />
+				<NOM:enumerator name="Stop" value="2" />
+			</NOM:enumerationType>
+		</NOM:enumerationTypes>
+		<NOM:complexTypes>
+			<NOM:complexType name="TestStruct">
+				<NOM:fieldType name="X" dataType="FloatBE" />
+				<NOM:fieldType name="Y" dataType="FloatBE" />
+				<NOM:fieldType name="Z" dataType="FloatBE" />
+			</NOM:complexType>
+			<NOM:complexType name="MessageHeaderStruct">
+				<NOM:fieldType name="ID" dataType="UnsignedShortBE" />
+				<NOM:fieldType name="SIZE" dataType="UnsignedShortBE" />
+			</NOM:complexType>
+			<NOM:complexType name="AntiInitInfoStruct">
+				<NOM:fieldType name="AntiInitLat" dataType="DoubleBE" />
+				<NOM:fieldType name="AntiInitLon" dataType="DoubleBE" />
+				<NOM:fieldType name="AntiDestLat" dataType="DoubleBE" />
+				<NOM:fieldType name="AntiDestLon" dataType="DoubleBE" />
+				<NOM:fieldType name="AntiVelocity" dataType="DoubleBE" />
+				<NOM:fieldType name="AntiType" dataType="UnsignedIntegerBE" />
+			</NOM:complexType>
+			<NOM:complexType name="LauncherInitInfoStruct">
+				<NOM:fieldType name="LauncherLat" dataType="DoubleBE" />
+				<NOM:fieldType name="LauncherLon" dataType="DoubleBE" />
+			</NOM:complexType>
+			<NOM:complexType name="RadarInitInfoStruct">
+				<NOM:fieldType name="RadarLat" dataType="DoubleBE" />
+				<NOM:fieldType name="RadarLon" dataType="DoubleBE" />
+			</NOM:complexType>
+			<NOM:complexType name="AntiInfoStruct">
+				<NOM:fieldType name="AntiLat" dataType="DoubleBE" />
+				<NOM:fieldType name="AntiLon" dataType="DoubleBE" />
+			</NOM:complexType>
+			<NOM:complexType name="MissileInfoStruct">
+				<NOM:fieldType name="MissileLat" dataType="DoubleBE" />
+				<NOM:fieldType name="MissileLon" dataType="DoubleBE" />
+			</NOM:complexType>
+		</NOM:complexTypes>
+	</NOM:dataTypes>
+	<NOM:notes>
+	</NOM:notes>
+</NOM:Nex1ObjectModel>
