@@ -27,10 +27,10 @@
     <ClInclude Include="ATSCommunicationManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CommLinkInfo.ini" />
+    <None Include="..\..\bin\ATSCommunicationManager\CommLinkInfo.ini" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="ATSCommunicationManager.xml" />
+    <Xml Include="..\..\bin\ATSCommunicationManager\ATSCommunicationManager.xml" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

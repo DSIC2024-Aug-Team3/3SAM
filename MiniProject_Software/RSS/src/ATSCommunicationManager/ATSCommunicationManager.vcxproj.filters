@@ -31,12 +31,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="ATSCommunicationManager.xml">
+    <Xml Include="..\..\bin\ATSCommunicationManager\ATSCommunicationManager.xml">
       <Filter>리소스 파일</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CommLinkInfo.ini">
+    <None Include="..\..\bin\ATSCommunicationManager\CommLinkInfo.ini">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
