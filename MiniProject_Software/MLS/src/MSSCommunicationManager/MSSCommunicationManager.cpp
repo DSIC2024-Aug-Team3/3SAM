@@ -102,7 +102,7 @@ MSSCommunicationManager::recvMsg(shared_ptr<NOM> nomMsg)
 void
 MSSCommunicationManager::setUserName(tstring userName)
 {
-	name = userName; 
+	name = userName;
 }
 
 tstring
@@ -124,7 +124,7 @@ MSSCommunicationManager::start()
 	MessageProcessor msgProcessor = bind(&MSSCommunicationManager::processRecvMessage, this, placeholders::_1, placeholders::_2);
 	commConfig->setMsgProcessor(msgProcessor);
 	commInterface->initNetEnv(commConfig);
-	tcout << _T("MSS Communication connect") << endl;
+	tcout << _T("MSS Communication connect!!!") << endl;
 	return true;
 }
 

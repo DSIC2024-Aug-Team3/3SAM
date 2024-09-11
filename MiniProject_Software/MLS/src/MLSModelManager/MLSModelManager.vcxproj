@@ -19,15 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AirthreatModel.cpp" />
+    <ClCompile Include="MissileLauncherModel.cpp" />
     <ClCompile Include="MLSModelManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AirthreatModel.h" />
+    <ClInclude Include="MissileLauncherModel.h" />
     <ClInclude Include="MLSModelManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="MLS.xml" />
+    <Xml Include="..\..\bin\MLSModelManager\MLS.xml" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
