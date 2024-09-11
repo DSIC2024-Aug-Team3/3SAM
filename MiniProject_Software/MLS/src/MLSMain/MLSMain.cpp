@@ -38,7 +38,7 @@ int main()
 		current_path(up);
 
 	}
-
+	tstring dllPath;
 	for (unsigned int cnt = 1; cnt <= numOfComponents; cnt++)
 	{
 		tstringstream dllPrefix;
@@ -47,11 +47,10 @@ int main()
 		tstring dllIndex;
 		dllPrefix >> dllIndex;
 
-		tstring dllPath = iniHandler.readString(dllIndex, _T("PATH"));
+		dllPath = iniHandler.readString(dllIndex, _T("PATH"));
 
 		(nIntegrator->getUserManager(dllPath))->start();
 	}
-
 	tcin.get();
 
 	/************************************************************************

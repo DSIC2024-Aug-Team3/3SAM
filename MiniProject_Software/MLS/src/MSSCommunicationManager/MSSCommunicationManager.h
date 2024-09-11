@@ -25,14 +25,14 @@ public:
 	virtual bool start() override;
 	virtual bool stop() override;
 	virtual void setMEBComponent(IMEBComponent*) override;
-	
+
 public:
 	void processRecvMessage(unsigned char* data, int size);
-	
+
 private:
 	void init();
 	void release();
-	
+
 private:
 	IMEBComponent* meb;
 	MECComponent* mec;

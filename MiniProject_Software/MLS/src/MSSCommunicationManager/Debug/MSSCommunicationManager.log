@@ -1,41 +1,7 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate 디렉터리가 슬래시로 끝나지 않습니다. Intermediate 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
-cl : 명령줄  warning D9035: 'experimental:preprocessor' 옵션은 더 이상 사용되지 않으므로 이후 릴리스에서 제거될 예정입니다.
-cl : 명령줄  warning D9036: 'Zc:preprocessor'을(를) 사용하고 'experimental:preprocessor'은(는) 사용하지 마십시오.
-  CommMessageHandler.cpp
-  MSSCommunicationManager.cpp
-  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
-  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
-  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
-  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
-C:\Nex1\nFrameworkv1.7\include\asio\asio\buffer.hpp(530,5): warning C4834: [[nodiscard]] 특성이 포함된 함수의 반환 값을 버리는 중입니다.
-  (소스 파일 '../MSSCommunicationManager/MSSCommunicationManager.cpp'을(를) 컴파일하는 중)
-      C:\Nex1\nFrameworkv1.7\include\asio\asio\buffer.hpp(530,5):
-      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
-          C:\Nex1\nFrameworkv1.7\include\asio\asio\detail\buffered_stream_storage.hpp(57,18):
-          컴파일되는 함수 템플릿 인스턴스화 'asio::mutable_buffers_1 asio::buffer<asio::detail::buffered_stream_storage::byte_type,std::allocator<asio::detail::buffered_stream_storage::byte_type>>(std::vector<asio::detail::buffered_stream_storage::byte_type,std::allocator<asio::detail::buffered_stream_storage::byte_type>> &)'에 대한 참조를 확인하세요.
-          C:\Nex1\nFrameworkv1.7\include\asio\asio\buffer.hpp(1118,12):
-          컴파일되는 클래스 템플릿 인스턴스화 'asio::detail::buffer_debug_check<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>'에 대한 참조를 확인하세요.
-          with
-          [
-              _Ty=asio::detail::buffered_stream_storage::byte_type
-          ]
-          C:\Nex1\nFrameworkv1.7\include\asio\asio\buffer.hpp(528,8):
-          클래스 템플릿 멤버 함수 'void asio::detail::buffer_debug_check<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>::operator ()(void)'을(를) 컴파일하는 중입니다.
-          with
-          [
-              _Ty=asio::detail::buffered_stream_storage::byte_type
-          ]
-              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(1704,5):
-              'std::invoke'에서 'asio::detail::buffer_debug_check<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>::operator ()'에 대한 첫 번째 참조를 확인하세요.
-          with
-          [
-              _Ty=asio::detail::buffered_stream_storage::byte_type
-          ]
-  
-  코드를 생성하고 있습니다...
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1392,5): warning MSB8012: TargetPath(C:\Users\User\Documents\GitHub\3SAM-doyeon-can-do-it\MiniProject_Software\MLS\lib\MSSCommunicationManager.dll)이(가) Linker의 OutputFile 속성 값(C:\Users\User\Documents\GitHub\3SAM-doyeon-can-do-it\MiniProject_Software\MLS\bin\MSSCommunicationManager\MSSCommunicationManagerd.dll)과 일치하지 않습니다. 이로 인해 프로젝트가 잘못 빌드될 수 있습니다. 이를 수정하려면 $(OutDir), $(TargetName) 및 $(TargetExt) 속성 값이 %(Link.OutputFile)에 지정된 값과 일치해야 합니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1392,5): warning MSB8012: TargetPath(C:\Users\User\Desktop\project\MiniProject_Software\MLS\lib\MSSCommunicationManager.dll)이(가) Linker의 OutputFile 속성 값(C:\Users\User\Desktop\project\MiniProject_Software\MLS\bin\MSSCommunicationManager\MSSCommunicationManagerd.dll)과 일치하지 않습니다. 이로 인해 프로젝트가 잘못 빌드될 수 있습니다. 이를 수정하려면 $(OutDir), $(TargetName) 및 $(TargetExt) 속성 값이 %(Link.OutputFile)에 지정된 값과 일치해야 합니다.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1394,5): warning MSB8012: TargetName(MSSCommunicationManager)이(가) Linker의 OutputFile 속성 값(MSSCommunicationManagerd)과 일치하지 않습니다. 이로 인해 프로젝트가 잘못 빌드될 수 있습니다. 이를 수정하려면 $(OutDir), $(TargetName) 및 $(TargetExt) 속성 값이 %(Link.OutputFile)에 지정된 값과 일치해야 합니다.
 CommMessageHandler.obj : warning LNK4075: '/EDITANDCONTINUE'이(가) '/INCREMENTAL:NO' 사양으로 인해 무시됩니다.
-     C:\Users\User\Documents\GitHub\3SAM-doyeon-can-do-it\MiniProject_Software\MLS\/lib/MSSCommunicationManagerd.lib 라이브러리 및 C:\Users\User\Documents\GitHub\3SAM-doyeon-can-do-it\MiniProject_Software\MLS\/lib/MSSCommunicationManagerd.exp 개체를 생성하고 있습니다.
-  MSSCommunicationManager.vcxproj -> C:\Users\User\Documents\GitHub\3SAM-doyeon-can-do-it\MiniProject_Software\MLS\lib\MSSCommunicationManager.dll
+     C:\Users\User\Desktop\project\MiniProject_Software\MLS\/lib/MSSCommunicationManagerd.lib 라이브러리 및 C:\Users\User\Desktop\project\MiniProject_Software\MLS\/lib/MSSCommunicationManagerd.exp 개체를 생성하고 있습니다.
+  MSSCommunicationManager.vcxproj -> C:\Users\User\Desktop\project\MiniProject_Software\MLS\lib\MSSCommunicationManager.dll
