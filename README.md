@@ -1,6 +1,8 @@
 ## 🚀 3SAM- 대공유도탄 모의시스템 
 - 공중 위협에 대응하여 지대공 유도탄 발사를 통해 교전 능력을 검증하는 모의 시스템<br><br>
 
+![image](https://github.com/user-attachments/assets/542e701f-5dde-46b1-aecd-f918f14f71cb)
+
 
 ## 📋 프로젝트 목적
 - 방산 소프트웨어의 요구사항 분석, 설계, 구현, 시험에 대한 이해<br><br>
